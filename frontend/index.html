@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scope</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 작업 화면(세계관 분석하기 / 검수 결과)에서만 보이는 사이드바 -->
+  <aside id="app-sidebar" class="app-sidebar hidden">
+    <div class="sidebar-header">
+      <button type="button" id="sidebar-hamburger-btn" class="sidebar-icon-only-btn" title="내 드라이브로 이동">
+        <img src="images/scope-icon.png" alt="Scope" class="sidebar-hamburger-icon" />
+      </button>
+      <button type="button" id="sidebar-logo-btn" class="sidebar-logo" title="내 드라이브로 이동">
+        <img src="images/scope-wordmark.png" alt="Scope" class="sidebar-wordmark-img" />
+      </button>
+      <button type="button" id="sidebar-toggle-btn" class="sidebar-icon-only-btn" title="사이드바 접기/펴기">
+        <img id="sidebar-toggle-icon" src="images/sidebartoggle_1.png" alt="" class="sidebar-toggle-icon" />
+      </button>
+    </div>
+
+    <div class="sidebar-search-wrap">
+      <input type="text" id="sidebar-search-input" class="sidebar-search-input" placeholder="Search" />
+      <img src="images/search.png" alt="" class="sidebar-search-icon" />
+      <span class="sidebar-search-label">검색하기</span>
+    </div>
+
+    <button type="button" id="sidebar-new-project-btn" class="sidebar-new-btn" title="새 프로젝트 만들기">
+      <img src="images/newfolder.png" alt="" class="btn-icon btn-icon-img" /><span class="btn-label">새 프로젝트</span>
+    </button>
+
+    <button type="button" id="sidebar-recent-btn" class="sidebar-section-label" title="최근 항목">
+      <img src="images/folder.png" alt="" class="btn-icon btn-icon-img" /><span class="btn-label">최근 항목</span>
+    </button>
+    <ul class="sidebar-project-list" id="sidebar-project-list"></ul>
+
+    <button type="button" id="sidebar-home-btn" class="sidebar-home-btn" title="내 드라이브">
+      <img src="images/home.png" alt="" class="btn-icon btn-icon-img" />
+      <span class="btn-label">내 드라이브</span>
+    </button>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-profile">
+        <div class="sidebar-user-avatar" id="sidebar-user-avatar" title="내 계정"></div>
+        <div class="sidebar-profile-text">
+          <div class="sidebar-profile-name" id="sidebar-profile-name"></div>
+          <div class="sidebar-profile-sub" id="sidebar-profile-sub"></div>
+        </div>
+      </div>
+      <button type="button" id="sidebar-settings-btn" class="sidebar-icon-only-btn" title="설정">
+        <img src="images/settings.png" alt="" class="sidebar-settings-icon" />
+      </button>
+    </div>
+  </aside>
+
+  <!-- 설정 팝오버 (사이드바의 overflow:hidden에 잘리지 않도록 밖에 둠) -->
+  <div id="settings-popover" class="settings-popover hidden">
+    <!-- 메인 메뉴 -->
+    <div class="settings-panel" id="settings-panel-main">
+      <div class="settings-panel-header">설정</div>
+      <button type="button" class="settings-menu-item" data-action="account">계정</button>
+      <button type="button" class="settings-menu-item" data-action="theme">테마</button>
+      <button type="button" class="settings-menu-item" data-action="public-link">내 공개 링크</button>
+      <button type="button" class="settings-menu-item" data-action="subscription">구독 관리</button>
+    </div>
+
+    <!-- 테마 색상 선택 -->
+    <div class="settings-panel hidden" id="settings-panel-theme">
+      <div class="settings-panel-header">
+        <button type="button" id="settings-theme-back-btn" class="settings-back-btn" title="뒤로">←</button>
+        테마
+      </div>
+
+      <div class="theme-panel-body">
+        <div class="theme-section-label">모양</div>
+        <div class="appearance-toggle" id="appearance-toggle">
+          <button type="button" class="appearance-btn" data-mode="light">☀️ 밝게</button>
+          <button type="button" class="appearance-btn" data-mode="dark">🌙 어둡게</button>
+          <button type="button" class="appearance-btn" data-mode="system">💻 기기</button>
+        </div>
+
+        <div class="theme-swatch-grid" id="theme-swatch-grid"></div>
+        <input type="color" id="theme-custom-color-input" class="theme-custom-color-input" />
+      </div>
+    </div>
+  </div>
+
+  <!-- 첫 화면: Glitch 스플래시 히어로 + 아래로 스크롤하면 나오는 소개/사용법 -->
+  <div id="start-screen" class="screen">
+    <section class="glitch-hero">
+      <canvas id="scope-canvas" class="scope-canvas" aria-hidden="true"></canvas>
+      <button id="start-btn" class="glitch-start-btn">시작하기</button>
+      <p id="demo-mode-badge" class="demo-mode-badge hidden">데모 로그인 모드</p>
+      <div class="scroll-hint" aria-hidden="true">
+        <span>아래로 스크롤</span>
+        <span class="scroll-hint-arrow">↓</span>
+      </div>
+    </section>
+
+    <!-- 서비스 소개 -->
+    <section class="landing-section">
+      <h2 class="landing-heading">긴 이야기일수록, 놓치는 설정이 생겨요</h2>
+      <p class="landing-sub">Glitch는 당신의 세계관 원고를 읽고, 회차를 거듭하며 생긴 모순과 설정 오류, 회수되지 않은 복선을 찾아드려요.</p>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📖</div>
+          <h3>원고 업로드</h3>
+          <p>TXT, MD 등 원고 파일을 회차별로 계속 쌓아가며 관리할 수 있어요.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3>모순 자동 검출</h3>
+          <p>인물, 설정, 시간선의 앞뒤가 안 맞는 부분을 찾아 근거 문장과 함께 짚어드려요.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧵</div>
+          <h3>미회수 복선 추적</h3>
+          <p>앞에서 던져둔 떡밥이 회수됐는지, 회차 기록을 바탕으로 확인해요.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>시각화 자료</h3>
+          <p>세계관, 인물, 시간, 공간, 사건, 복선을 한눈에 볼 수 있게 정리해요.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 사용 방법 -->
+    <section class="landing-section landing-section-alt">
+      <h2 class="landing-heading">사용 방법</h2>
+
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <div>
+            <h3>구글 계정으로 로그인</h3>
+            <p>시작하기를 누르고 구글 계정으로 간단히 로그인하세요.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <div>
+            <h3>새 프로젝트 만들기</h3>
+            <p>작품 이름으로 프로젝트를 하나 만들어요. 회차가 쌓일 공간이에요.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <div>
+            <h3>원고 업로드 또는 직접 입력</h3>
+            <p>이번 회차 원고 파일을 올리거나, 텍스트를 바로 붙여넣어요.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">4</div>
+          <div>
+            <h3>분석 시작</h3>
+            <p>검수 결과, 원문, 시각화 자료를 탭으로 나누어 바로 확인할 수 있어요.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 하단 CTA + 푸터 -->
+    <section class="landing-cta">
+      <h2 class="landing-heading">지금 바로 세계관을 점검해보세요</h2>
+      <button id="start-btn-bottom" class="glitch-start-btn">시작하기</button>
+    </section>
+
+    <footer class="landing-footer">
+      <p>© 2026 Scope · 세계관 모순 검수 도구</p>
+    </footer>
+  </div>
+
+  <!-- 로그인 후 첫 화면: 내 드라이브 -->
+  <div id="drive-screen" class="screen hidden">
+    <div class="topbar">
+      <span id="drive-user-info"></span>
+      <button id="drive-logout-btn" class="link-btn">로그아웃</button>
+    </div>
+
+    <div class="drive-card">
+      <div class="drive-header">
+        <h1>내 드라이브</h1>
+
+        <button id="new-project-btn" class="new-project-btn">
+          <img src="images/newfolder.png" alt="" class="new-project-icon new-project-icon-img" /> 새 프로젝트 만들기
+        </button>
+
+        <h2 class="section-subheading">이전 프로젝트</h2>
+      </div>
+
+      <div class="project-grid" id="project-grid"></div>
+
+      <div class="pagination" id="project-pagination"></div>
+    </div>
+  </div>
+
+  <!-- 새 프로젝트 이름 입력 모달 -->
+  <div id="project-name-modal" class="modal-overlay hidden">
+    <div class="modal-box">
+      <h2>새 프로젝트 만들기</h2>
+      <p class="subtitle">프로젝트 이름을 입력해주세요.</p>
+      <input type="text" id="project-name-input" placeholder="예: 금도끼 은도끼 (비워두면 자동으로 이름 지어드려요)" />
+      <div class="modal-actions">
+        <button id="project-name-cancel-btn" class="secondary-btn">취소</button>
+        <button id="project-name-confirm-btn" class="primary-btn">만들기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 로그인 후 보여줄 화면: 세계관 분석하기 -->
+  <div id="main-screen" class="screen hidden">
+    <div class="topbar">
+      <span id="user-info"></span>
+      <button id="logout-btn" class="link-btn">로그아웃</button>
+    </div>
+
+    <div class="analyze-card">
+      <div class="analyze-header-row">
+        <h1 id="analyze-title">세계관 분석하기</h1>
+        <button type="button" id="analyze-view-results-btn" class="prev-result-link hidden">이전 검수결과 →</button>
+      </div>
+
+      <div class="round-filter-wrap hidden" id="analyze-round-filter-wrap">
+        <div class="round-filter-bar" id="round-filter-bar-analyze"></div>
+        <button type="button" class="round-filter-arrow" id="round-filter-arrow-analyze" title="더보기">→</button>
+      </div>
+
+      <!-- 원본 파일 업로드 -->
+      <div class="field">
+        <label>원본 파일 업로드</label>
+        <p class="field-desc">당신의 원작을 정리한 텍스트파일 (TXT, MD, PDF, DOCX) · 여러 회차 파일을 계속 추가할 수 있어요</p>
+
+        <div class="dropzone" id="source-dropzone">
+          <input type="file" id="source-file" accept=".txt,.md,.pdf,.docx" multiple hidden />
+          <img src="images/upload.png" alt="" class="dropzone-icon" />
+          <p class="dropzone-title">파일을 여기에 드래그하거나 클릭하여 선택</p>
+          <p class="dropzone-sub">TXT, MD, DOCX, PDF 형식 지원</p>
+        </div>
+        <ul class="file-chip-list" id="source-filename"></ul>
+      </div>
+
+      <!-- 직접 입력 -->
+      <div class="field">
+        <div class="field-label-row">
+          <label for="content-input">또는 직접 입력하기</label>
+          <span class="char-count" id="char-count">0 / 최소 100자</span>
+        </div>
+        <textarea id="content-input" rows="5" placeholder="당신의 세계관 설정, 규칙, 배경 이야기 등을 입력하세요..."></textarea>
+        <p class="field-hint" id="content-hint">최소 100자 이상 입력해주세요</p>
+      </div>
+
+      <!-- 세계관 규칙 파일 업로드 -->
+      <div class="field">
+        <label>세계관 규칙 파일 업로드 (선택사항)</label>
+        <p class="field-desc">세계관에서 반드시 지켜야 할 규칙을 입력하지 않아도 저희가 안내를 만들 수 있습니다</p>
+
+        <div class="dropzone" id="rules-dropzone">
+          <input type="file" id="rules-file" accept=".txt,.md,.pdf,.docx" multiple hidden />
+          <img src="images/upload.png" alt="" class="dropzone-icon" />
+          <p class="dropzone-title">파일을 여기에 드래그하거나 클릭하여 선택</p>
+          <p class="dropzone-sub">TXT, MD, DOCX, PDF 형식 지원</p>
+        </div>
+        <ul class="file-chip-list" id="rules-filename"></ul>
+      </div>
+
+      <div class="actions">
+        <button id="analyze-btn" class="primary-btn" disabled>◆ 분석 시작</button>
+        <button id="back-btn" class="secondary-btn">로그아웃하고 처음으로</button>
+      </div>
+
+      <!-- 1차 분석 진행 상태 (원문 → 구조화 데이터 추출) -->
+      <div class="analyze-progress hidden" id="analyze-progress-wrap">
+        <div class="analyze-progress-step" id="analyze-progress-step-0" data-stage="connect">
+          <span class="analyze-progress-icon"></span>
+          <div class="analyze-progress-text">
+            <p class="analyze-progress-title">서버 연결</p>
+            <p class="analyze-progress-desc">분석 서버(AI)가 켜져 있는지 먼저 확인해요.</p>
+          </div>
+        </div>
+        <div class="analyze-progress-step" id="analyze-progress-step-1" data-stage="extract">
+          <span class="analyze-progress-icon"></span>
+          <div class="analyze-progress-text">
+            <p class="analyze-progress-title">1차 · 원문 정리</p>
+            <p class="analyze-progress-desc">업로드한 원문에서 세계관 규칙·시간·공간·인물·사건·복선을 추출해요.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tips">
+        <p class="tips-title">💡 분석 팁</p>
+        <ul>
+          <li>세계관의 배경, 등장인물, 규칙을 구체적으로 작성할수록 더 정확한 분석이 가능해요.</li>
+          <li>파일 1개, 직접 입력 1건이 각각 회차 1개가 돼요. 이미 올린 원고와 같은 내용이면 서버가 알려드려요.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 검수 결과 화면: 1차(추출) 결과와 2차(모순 검토) 결과를 탭으로 나눠서 같은 화면에서 확인합니다 -->
+  <div id="result-screen" class="screen hidden">
+    <div class="topbar">
+      <span id="result-title-info"></span>
+      <button id="result-logout-btn" class="link-btn">로그아웃</button>
+    </div>
+
+    <div class="result-card">
+      <div class="analyze-header-row">
+        <h1 id="result-project-title">세계관 분석하기</h1>
+        <button type="button" id="back-to-analyze-btn-top" class="prev-result-link">← 세계관 분석하기</button>
+      </div>
+
+      <!-- 회차 필터 (전체 / 1회차 / 2회차 ...): "세계관 분석하기" 화면과 같은 위치.
+           탭을 바꿔도 여기서 고른 회차가 그대로 유지됩니다. -->
+      <div class="round-filter-wrap" id="result-round-filter-wrap">
+        <div class="round-filter-bar" id="round-filter-bar-result"></div>
+        <button type="button" class="round-filter-arrow" id="round-filter-arrow-result" title="더보기">→</button>
+      </div>
+
+      <div class="analyze-header-row result-tabs-row">
+        <div class="result-tabs">
+          <button class="tab-btn active" data-tab="extract">1차 · 분석 결과</button>
+          <button class="tab-btn" data-tab="report">2차 · 검수결과</button>
+          <button class="tab-btn" data-tab="source">원문보기</button>
+          <button class="tab-btn" data-tab="visual">시각화 자료</button>
+        </div>
+      </div>
+
+      <!-- 1차(추출) 결과 탭: LLM 호출 1회로 뽑아낸 세계관규칙/시간/공간/인물/사건/복선 데이터.
+           확인 후 수정하고 저장할 수 있고, 여기서 바로 "검토하기"로 2차를 시작할 수 있습니다. -->
+      <div class="tab-panel" id="tab-extract">
+        <h1>1차 분석 결과</h1>
+        <p class="subtitle" id="extract-summary-text">
+          원문에서 추출한 세계관 규칙·시간·공간·인물·사건·복선 항목이에요. 각 항목을 검토해서 그대로 둘지, 수정할지 정해주세요.
+        </p>
+
+        <div class="stat-cards" id="extract-stat-cards"></div>
+
+        <div class="extract-sections" id="extract-sections"></div>
+
+        <div class="actions extract-tab-actions">
+          <button type="button" id="extract-review-btn" class="primary-btn">◆ 검토하기 (2차 모순 검토 실행)</button>
+        </div>
+      </div>
+
+
+      <!-- 2차(검토) 결과 탭: 기존 검수결과 탭. 수정은 불가능하고, 항목별로 확인(✓)/삭제(✕)만 할 수 있어요. -->
+      <div class="tab-panel hidden" id="tab-report">
+        <h1>검수 결과</h1>
+        <p class="subtitle" id="result-summary-text">분석이 완료되었습니다.</p>
+        <p class="report-note hidden" id="report-note">ℹ️ "다시 검토하기"를 하면 이 목록이 새 결과로 바뀌고 ✓/✕ 판정도 초기화돼요.</p>
+
+        <!-- 1차 탭 맨 아래 버튼과 같은 동작(회차 상태에 따라 검토하기/다시 검토하기/저장 재시도). "전체" 보기에서는 숨긴다. -->
+        <div class="actions report-tab-actions">
+          <button type="button" id="report-review-btn" class="primary-btn hidden">◆ 검토하기 (2차 모순 검토 실행)</button>
+        </div>
+
+        <div class="stat-cards" id="stat-cards"></div>
+
+        <div class="issue-list" id="issue-list"></div>
+      </div>
+
+      <!-- 원문보기 탭 (원문 + 자료 요약) -->
+      <div class="tab-panel hidden" id="tab-source">
+        <h1>원문 보기</h1>
+        <p class="subtitle">분석에 사용된 내용을 파일별로 나눠서 확인할 수 있어요.</p>
+
+        <div class="source-view" id="source-view-content"></div>
+
+        <h2 class="section-subheading">자료 요약</h2>
+        <ul class="summary-list" id="summary-list"></ul>
+
+        <h2 class="section-subheading">회차 기록</h2>
+        <ul class="summary-list round-history-list" id="round-history-list"></ul>
+      </div>
+
+      <!-- 시각화 자료 탭 -->
+      <div class="tab-panel hidden" id="tab-visual">
+        <h1>시각화 자료</h1>
+        <p class="subtitle">보고 싶은 항목을 선택하면 해당 시각화 자료를 보여드려요.</p>
+
+        <div class="category-picker" id="category-picker">
+          <button class="category-btn active" data-category="worldview">🌍 총 세계관</button>
+          <button class="category-btn" data-category="character">🧑 인물</button>
+          <button class="category-btn" data-category="time">⏱ 시간</button>
+          <button class="category-btn" data-category="space">🗺 공간</button>
+          <button class="category-btn" data-category="event">📌 사건</button>
+          <button class="category-btn" data-category="foreshadow">🧵 복선</button>
+        </div>
+
+        <div class="visual-content" id="visual-content">
+          <p class="visual-placeholder">위에서 보고 싶은 항목을 선택해주세요.</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="new-analysis-btn" class="primary-btn">다음 회차 분석 시작하기</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

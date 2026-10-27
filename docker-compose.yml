@@ -1,0 +1,71 @@
+# ⚠️ 포트는 전부 127.0.0.1 에만 연다. "6379:6379" 처럼 쓰면 0.0.0.0(모든 인터페이스)에 열려
+#    방화벽이 허용하는 순간 인터넷에 노출된다 — 2026-10-11 인증 없는 Redis 가 실제로 공격받았다
+#    (cron 페이로드 키 backup1~4 주입). 다른 PC에서 접속해야 하면 터널을 쓴다.
+services:
+  db:
+    image: postgres:16
+    container_name: glitch-db
+    # Docker 가 다시 뜨면 컨테이너도 따라 올라오게 한다
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: glitch
+      POSTGRES_PASSWORD: glitch
+      POSTGRES_DB: glitch_integrated
+    ports:
+      # 호스트 5433 → 컨테이너 5432 (호스트에 네이티브 PostgreSQL 이 있어도 충돌하지 않도록 5433)
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - glitch_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U glitch -d glitch_integrated"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # 분석 작업 큐(arq) 브로커. 워커 프로세스(arq app.workers.worker.WorkerSettings)가
+  # 여기서 작업을 꺼내 실행한다. QUEUE_MODE=arq 일 때만 필요.
+  # 비밀번호(2차 방어선): .env 의 REDIS_PASSWORD 가 없으면 compose 가 기동을 거부한다.
+  # 앱 쪽은 REDIS_URL=redis://:<같은 비밀번호>@127.0.0.1:6379/0 (localhost 는 ::1 로 풀려 멈출 수 있음)
+  redis:
+    image: redis:7-alpine
+    container_name: glitch-redis
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:6379:6379"
+    # appendonly: 재시작 시 대기 중 작업 보존
+    command:
+      - redis-server
+      - --appendonly
+      - "yes"
+      - --requirepass
+      - ${REDIS_PASSWORD:?.env 에 REDIS_PASSWORD 를 설정하세요}
+    environment:
+      REDISCLI_AUTH: ${REDIS_PASSWORD}  # healthcheck 의 redis-cli 가 인증에 사용
+    volumes:
+      - glitch_redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # 웹 기반 DB 관리툴 — 로컬 DB 확인용, http://127.0.0.1:8081. tools 프로필이라
+  #    `docker compose up -d` 에는 뜨지 않는다: docker compose --profile tools up -d adminer
+  #    터널·공개 URL 뒤에 두지 않는다. 다 보면 docker compose --profile tools stop adminer
+  adminer:
+    image: adminer
+    container_name: glitch-adminer
+    profiles: ["tools"]
+    restart: "no"
+    ports:
+      - "127.0.0.1:8081:8080"
+    environment:
+      # 접속 화면에서 서버 칸이 db(컨테이너 이름)로 미리 채워지게 한다
+      ADMINER_DEFAULT_SERVER: db
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  glitch_pgdata:
+  glitch_redisdata:

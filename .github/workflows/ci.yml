@@ -1,0 +1,61 @@
+# 백엔드 CI — backend 브랜치에 push/PR 할 때마다 전체 테스트 실행.
+# 테스트(conftest.py)는 접속할 DB 서버를 GLITCH_TEST_DSN → .env → localhost:5432 순으로
+# 정하고, 그 서버에 glitch_test DB를 만들어 쓴다. CI에는 .env가 없으므로
+# 아래 서비스 컨테이너(호스트 5433)를 GLITCH_TEST_DSN 으로 명시해야 한다.
+# (2026-10-01 86fcdf9 이후 이게 빠져서 5432로 붙으려다 전부 실패했었다.)
+name: backend-ci
+
+on:
+  push:
+    branches: [backend]
+  pull_request:
+    branches: [backend]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      # CI에는 .env가 없으므로(gitignore) 테스트가 전제하는 기능 플래그를 명시.
+      # DB/Redis/큐 설정은 tests/conftest.py가 환경변수로 강제한다.
+      ENABLE_FIREBASE_AUTH: "true"
+      ENABLE_SMOKE: "false"
+      # 테스트 DB 서버 = 아래 postgres 서비스 (호스트 포트 5433). DB 이름은 conftest 가 glitch_test 로 바꾼다.
+      GLITCH_TEST_DSN: "postgresql://glitch:glitch@localhost:5433/glitch_integrated"
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: glitch
+          POSTGRES_PASSWORD: glitch
+          POSTGRES_DB: glitch_integrated
+        ports:
+          - "5433:5432"
+        options: >-
+          --health-cmd "pg_isready -U glitch"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 10
+      redis:
+        image: redis:7-alpine
+        ports:
+          - "6379:6379"
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install
+        run: pip install -e ".[dev]"
+
+      - name: Test
+        run: pytest -q

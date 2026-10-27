@@ -1,0 +1,1841 @@
+{
+ "chapter_no": 1,
+ "title": "의뢰",
+ "text_sha1": "0172907b6f46e4b0b69d74a143228cfe0508b33e",
+ "visual": {
+  "worldview_rules": [
+   {
+    "rule_id": "RULE_001",
+    "content": "추출(Extraction): 꿈 상태에서는 의식적 방어가 무너져 생각을 훔칠 수 있다",
+    "description": "추출자는 표적의 꿈에 들어가 비밀 정보를 빼낸다.",
+    "source_text": "꿈 상태에서는 의식적인 방어가 무너져 생각이 도난에 취약해집니다.",
+    "certainty": "explicit"
+   },
+   {
+    "rule_id": "RULE_002",
+    "content": "생각은 한번 자리 잡으면 제거하기 거의 불가능하다",
+    "description": "완전히 형태를 갖추고 이해된 생각은 무시하거나 덮어둬도 남아 있으며, 한 사람의 세계를 규정하거나 파괴할 수 있다.",
+    "source_text": "생각이라는 것은 일단 뇌리에 자리 잡으면 뿌리 뽑기가 거의 불가능합니다.",
+    "certainty": "explicit"
+   },
+   {
+    "rule_id": "RULE_003",
+    "content": "꿈 공유는 은색 서류가방 장치, 손목 튜브, 솜나신 계열 약물로 이루어진다",
+    "description": "튜브로 연결된 사람들이 하나의 꿈을 공유하며, 투약 시간은 카운트다운 장치로 조절된다. 정품 솜나신은 국제 통제 위원회의 통제를 받는다.",
+    "source_text": "꿈꾸는 자들을 단단히 묶어줍니다. 하나의 꿈을 공유하게 만들죠.",
+    "certainty": "explicit"
+   },
+   {
+    "rule_id": "RULE_004",
+    "content": "꿈을 꾸는 자(Dreamer)가 세계의 구조를 제공하고, 표적(Subject)의 무의식이 그 세계를 사람들로 채운다",
+    "description": "표적의 무의식이 투사체를 창조하므로 추출팀은 표적의 무의식과 직접 대화할 수 있다. 보안 공간을 만들면 표적의 정신이 그곳을 비밀로 채운다.",
+    "source_text": "당신이 꿈을 꾸는 자(Dreamer)이고, 내가 표적(Subject)이니까요. 내 무의식이 당신의 세계를 채우는 겁니다.",
+    "certainty": "explicit"
+   },
+   {
+    "rule_id": "RULE_005",
+    "content": "투사체는 꿈의 이질적 요소(설계자)를 감지하면 공격한다",
+    "description": "환경을 많이 바꾸거나 꿈의 기이함이 드러날수록 투사체가 설계자에게 적대적으로 몰려든다.",
+    "source_text": "꿈을 설계한 자의 이질적인 성질을 느끼고 공격하는 거죠—감염균과 싸우는 백혈구처럼요.",
+    "certainty": "explicit"
+   },
+   {
+    "rule_id": "RULE_006",
+    "content": "꿈의 시작은 기억되지 않는다",
+    "description": "꿈은 항상 이미 진행 중인 상황의 한가운데서 시작되므로, 어떻게 그곳에 왔는지 기억하지 못하면 꿈임을 의심할 수 있다.",
+    "source_text": "언제나 이미 벌어지고 있는 일의 한가운데서 불쑥 나타나죠.",
+    "certainty": "explicit"
+   },
+   {
+    "rule_id": "RULE_007",
+    "content": "꿈속 시간은 현실보다 느리게 흐른다",
+    "description": "꿈에서는 뇌 기능이 빨라져 현실 5분이 꿈속 약 1시간이 된다. 강화 약물 사용 시 약 20배로 가속된다.",
+    "source_text": "현실의 5분이 꿈속에서는 한 시간 정도가 되지.",
+    "certainty": "explicit"
+   },
+   {
+    "rule_id": "RULE_009",
+    "content": "꿈속의 고통은 실제처럼 느껴진다",
+    "description": "꿈 안에서는 꿈이 현실이므로 부상의 고통이 그대로 느껴진다.",
+    "source_text": "유리 파편이 얼굴에 박히면 끔찍하게 아프거든요.",
+    "certainty": "explicit"
+   },
+   {
+    "rule_id": "RULE_010",
+    "content": "일반적으로 꿈속에서 죽으면 잠에서 깨어난다",
+    "description": "통상적 진정 상태에서는 죽음이 꿈에서 깨어나는 방법이다.",
+    "source_text": "꿈속에서 깨어나는 유일한 방법은 죽는 것뿐이야.",
+    "certainty": "explicit"
+   },
+   {
+    "rule_id": "RULE_014",
+    "content": "킥(Kick): 낙하감이나 기우는 감각으로 꿈에서 깨어날 수 있다",
+    "description": "진정제는 전정기관 기능을 유지하도록 조제되어 깊은 잠에서도 낙하감을 느끼게 한다.",
+    "source_text": "잠에서 번뜩 깨어나게 만드는 낙하감이지.",
+    "certainty": "explicit"
+   },
+   {
+    "rule_id": "RULE_019",
+    "content": "기억 속 장소를 그대로 재현해 꿈을 지어서는 안 된다",
+    "description": "현실과 꿈의 분별을 잃는 가장 확실한 길이므로 파편만 활용해야 한다.",
+    "source_text": "기억 속 장소를 그대로 재현하지 마세요. 언제나 새로운 장소를 상상해야 합니다.",
+    "certainty": "explicit"
+   },
+   {
+    "rule_id": "RULE_027",
+    "content": "추출팀을 고용한 기업(코볼 사)은 실패를 용납하지 않는다",
+    "description": "실패한 추출자는 추적과 현상금의 대상이 된다.",
+    "source_text": "우릴 고용한 기업이 실패를 용납하지 않는다는 걸 잘 아실 텐데요.",
+    "certainty": "explicit"
+   }
+  ],
+  "characters": [
+   {
+    "character_id": "CHAR_001",
+    "name": "코브",
+    "aliases": [
+     "돔",
+     "돔 코브",
+     "턱수염을 기른 남자",
+     "로드 그린",
+     "찰스",
+     "아빠"
+    ],
+    "description": "최고의 추출자. 아내 맬의 죽음에 대한 혐의로 미국에 돌아가지 못하고 아이들과 떨어져 지낸다. 사이토의 의뢰로 인셉션을 수행한다.",
+    "first_appearance_event_id": "EVENT_001",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "35세의 말쑥한 미남",
+      "trait_type": "appearance",
+      "source_text": "코브는 35세로, 말쑥한 수트 차림의 미남이다.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "가장 노련한 추출자",
+      "trait_type": "ability",
+      "source_text": "제가 가장 노련한 추출자이기 때문입니다.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "백철제 팽이를 토템으로 사용",
+      "trait_type": "habit",
+      "source_text": "백철제 팽이를 꺼내 테이블 위에 돌린다...",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "더 이상 직접 꿈을 설계하지 않음",
+      "trait_type": "status",
+      "source_text": "맬이 가만두지 않아요.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_004",
+      "relationship_type": "lover",
+      "description": "사망한 아내. 투사체로 계속 나타나며 그리움과 죄책감의 대상",
+      "sentiment": "mixed",
+      "source_text": "그리워해. 하지만 이제 널 믿을 수 없어.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_007",
+      "relationship_type": "family",
+      "description": "아들",
+      "sentiment": "positive",
+      "source_text": "제임스예요. 내 아들.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_008",
+      "relationship_type": "family",
+      "description": "딸",
+      "sentiment": "positive",
+      "source_text": "그리고 필리파예요.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_003",
+      "relationship_type": "colleague",
+      "description": "오랜 동료 포인트맨",
+      "sentiment": "positive",
+      "source_text": "포인트맨으로서는 훌륭해.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_002",
+      "relationship_type": "other",
+      "description": "처음엔 추출 표적이었다가 인셉션 의뢰인이 됨",
+      "sentiment": "mixed",
+      "source_text": "팀을 꾸리게, 코브 씨.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_009",
+      "relationship_type": "family",
+      "description": "장인이자 드림 셰어를 가르쳐준 스승",
+      "sentiment": "positive",
+      "source_text": "교수님이 제게 가르쳐주신 게 이거잖아요.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_005",
+      "relationship_type": "colleague",
+      "description": "배신한 설계자",
+      "sentiment": "negative",
+      "source_text": "자네를 팔아넘겼더군.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_002",
+    "name": "사이토",
+    "aliases": [
+     "노년의 일본인 남성",
+     "젊은 일본인 남성"
+    ],
+    "description": "일본의 강력한 기업가. 피셔-모로우의 경쟁사 수장으로 코브에게 인셉션을 의뢰하고 직접 작전에 동행한다.",
+    "first_appearance_event_id": "EVENT_002",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "날카로운 관찰력으로 꿈임을 간파함",
+      "trait_type": "ability",
+      "source_text": "그런데 지금 난 폴리에스테르 위에 뺨을 대고 누워 있군.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "superior",
+      "description": "고용주로서 코브의 귀국을 약속",
+      "sentiment": "mixed",
+      "source_text": "집으로 돌아가고 싶지 않나? 미국으로. 아이들에게로.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_003",
+    "name": "아서",
+    "aliases": [],
+    "description": "코브의 포인트맨. 꼼꼼하고 신중하며 2단계 꿈의 꿈꾸는 자.",
+    "first_appearance_event_id": "EVENT_003",
+    "certainty": "explicit",
+    "traits": [],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "colleague",
+      "description": "코브를 걱정하는 동료",
+      "sentiment": "positive",
+      "source_text": "코브... 너 괜찮아?",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_004",
+    "name": "맬",
+    "aliases": [
+     "코브 부인",
+     "엄마"
+    ],
+    "description": "코브의 사망한 아내. 림보 경험 후 세상이 꿈이라 믿고 투신했다. 코브의 무의식 속 투사체로 반복해서 나타나 작전을 방해한다.",
+    "first_appearance_event_id": "EVENT_007",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "우아하고 아름다운 여인",
+      "trait_type": "appearance",
+      "source_text": "우아한 옷차림의 아름다운 여인이 바다를 내려다보고 있다.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": []
+   },
+   {
+    "character_id": "CHAR_005",
+    "name": "내시",
+    "aliases": [],
+    "description": "사이토 추출 작전의 설계자. 실패 후 코브를 사이토에게 팔아넘긴다.",
+    "first_appearance_event_id": "EVENT_005",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "땀을 흘리는 40대 남자",
+      "trait_type": "appearance",
+      "source_text": "땀을 흘리는 40대 남자가 코브를 감시하고 있다. 내시다.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "카펫 재질을 잘못 설계해 작전 실패 원인 제공",
+      "trait_type": "other",
+      "source_text": "어떻게 카펫 재질 하나를 똑바로 못 맞춰?!",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "colleague",
+      "description": "코브를 배신함",
+      "sentiment": "negative",
+      "source_text": "자네를 팔아넘겼더군.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_006",
+    "name": "토다시",
+    "aliases": [],
+    "description": "신칸센에서 잠든 팀을 지키는 18세 일본인 청년 조력자.",
+    "first_appearance_event_id": "EVENT_006",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "18세 일본인 청년",
+      "trait_type": "background",
+      "source_text": "일본인 청년 토다시(18)가 불안하게 내시를 지켜본다.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "subordinate",
+      "description": "돈을 받고 일하는 조력자",
+      "sentiment": "neutral",
+      "source_text": "코브는 토다시에게 두툼한 현금 뭉치 를 쥐여주고",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_007",
+    "name": "제임스",
+    "aliases": [
+     "어린 금발 소년"
+    ],
+    "description": "코브의 아들. 기억과 꿈 속에서는 늘 등을 돌린 모습으로 나타난다.",
+    "first_appearance_event_id": "EVENT_020",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "세 살배기 금발 소년",
+      "trait_type": "appearance",
+      "source_text": "우리를 등진 세 살배기 금발 소년이 정원에 웅크리고 앉아",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "family",
+      "description": "아빠를 기다림",
+      "sentiment": "positive",
+      "source_text": "네. 집에 언제 와요?",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_008",
+    "name": "필리파",
+    "aliases": [
+     "어린 금발 소녀",
+     "어린 소녀"
+    ],
+    "description": "코브의 딸.",
+    "first_appearance_event_id": "EVENT_020",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "다섯 살배기 금발 소녀",
+      "trait_type": "appearance",
+      "source_text": "얼굴이 보이지 않는 다섯 살배기 금발 소녀가",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "family",
+      "description": "딸",
+      "sentiment": "positive",
+      "source_text": "할머니가 아빠는 영영 안 돌아올 거래요.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_009",
+    "name": "마일즈",
+    "aliases": [
+     "마일즈 교수",
+     "스티븐"
+    ],
+    "description": "파리 국립건축학교 교수. 맬의 아버지이자 코브의 스승. 아리아드네를 소개한다.",
+    "first_appearance_event_id": "EVENT_025",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "텁수룩한 교수, 연구실보다 강의실을 선호",
+      "trait_type": "habit",
+      "source_text": "연구실 싫어하시는 건 여전하시네요.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "드림 셰어 설계·항해를 가르친 인물",
+      "trait_type": "background",
+      "source_text": "다른 사람의 정신을 설계하고 항해하는 법을 가르쳐주셨죠.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "family",
+      "description": "사위이자 제자. 걱정과 원망이 섞임",
+      "sentiment": "mixed",
+      "source_text": "돌아가서 죗값을 치르게, 돔.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_016",
+      "relationship_type": "family",
+      "description": "20년을 함께 산 아내",
+      "sentiment": "neutral",
+      "source_text": "20년을 함께 사셨잖아요.",
+      "certainty": "inferred"
+     },
+     {
+      "target_character_id": "CHAR_010",
+      "relationship_type": "superior",
+      "description": "제자",
+      "sentiment": "positive",
+      "source_text": "자네보다 더 뛰어난 아이가 있네.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_010",
+    "name": "아리아드네",
+    "aliases": [],
+    "description": "마일즈 교수의 뛰어난 건축학도. 팀의 설계자가 되어 코브의 비밀을 알고 림보까지 동행한다.",
+    "first_appearance_event_id": "EVENT_026",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "빠른 학습력과 창의적 설계 능력",
+      "trait_type": "ability",
+      "source_text": "그렇게 빨리 감을 잡는 친구는 본 적이 없어.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": []
+   },
+   {
+    "character_id": "CHAR_016",
+    "name": "마리",
+    "aliases": [
+     "할머니",
+     "장모님"
+    ],
+    "description": "코브의 장모로 아이들을 돌보고 있다.",
+    "first_appearance_event_id": "EVENT_020",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "코브를 원망함",
+      "trait_type": "personality",
+      "source_text": "그 사람은 자네만큼이나 날 원망하고 있어.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "family",
+      "description": "사위를 원망",
+      "sentiment": "negative",
+      "source_text": "할머니가 아빠는 영영 안 돌아올 거래요.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_019",
+    "name": "일본인 보안요원",
+    "aliases": [],
+    "description": "림보 속 사이토 성곽의 보안요원. 해변에서 코브를 발견한다.",
+    "first_appearance_event_id": "EVENT_001",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "소총을 든 보안요원",
+      "trait_type": "status",
+      "source_text": "소총 총열이 남자를 툭 쳐서 똑바로 눕힌다.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_002",
+      "relationship_type": "subordinate",
+      "description": "사이토의 부하",
+      "sentiment": "neutral",
+      "source_text": "몸에 지닌 것은 이것뿐이었습니다...",
+      "certainty": "inferred"
+     }
+    ]
+   }
+  ],
+  "events": [
+   {
+    "event_id": "EVENT_001",
+    "order": 1,
+    "title": "턱수염 남자가 해변에 떠밀려 와 발견된다",
+    "summary": "파도에 휩쓸려 온 턱수염 남자가 아이들을 부르려 하나 아이들은 도망치고, 일본인 보안요원이 그를 발견한다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_019",
+     "CHAR_007",
+     "CHAR_008"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_001",
+    "location_id": "LOCATION_001",
+    "cause": "림보에서의 표류",
+    "result": "보안요원에게 발견됨",
+    "response": 0.5,
+    "continuation": 1,
+    "source_text": "파도가 젖은 모래사장 위로 턱수염을 기른 남자를 내동댕이친다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_002",
+    "order": 2,
+    "title": "노년의 사이토가 팽이를 알아보고 남자를 맞이한다",
+    "summary": "보안요원이 권총과 팽이를 보이자 노인이 남자를 데려와 먹이고, 꿈속에서 만난 남자의 물건이라며 회상한다.",
+    "participant_character_ids": [
+     "CHAR_002",
+     "CHAR_001",
+     "CHAR_019"
+    ],
+    "main_actor_character_id": "CHAR_002",
+    "time_id": "TIME_002",
+    "location_id": "LOCATION_002",
+    "cause": "남자가 지닌 팽이",
+    "result": "노인이 오래전 기억을 떠올림",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "어렴풋이 기억나는 꿈속에서 만난 남자의 물건이었지...",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_003",
+    "order": 3,
+    "title": "코브와 아서가 사이토에게 추출 방어 훈련을 제안한다",
+    "summary": "코브는 생각이 가장 끈질긴 기생충이라며 사이토의 잠재의식을 훈련시켜주겠다고 제안하고, 그러려면 비밀 금고를 알아야 한다고 말한다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_003",
+     "CHAR_002"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_003",
+    "location_id": "LOCATION_003",
+    "cause": "사이토의 비밀을 빼내려는 추출 작전",
+    "result": "사이토가 제안을 검토하겠다며 자리를 뜸",
+    "response": 0,
+    "continuation": 1,
+    "source_text": "이 작업이 성공하려면 저를 들여보내 주셔야 합니다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_004",
+    "order": 4,
+    "title": "사이토가 떠나고 꿈 세계가 흔들리기 시작한다",
+    "summary": "아서는 사이토가 눈치챘다고 걱정하고, 진동과 함께 코브의 시계 초침이 멈춘다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_003",
+    "time_id": "TIME_004",
+    "location_id": "LOCATION_004",
+    "cause": "상위 꿈 층위의 폭동과 폭발",
+    "result": "작전 위험 인지",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "위에서 대체 무슨 일이 벌어지는 거야?",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_005",
+    "order": 5,
+    "title": "내시가 폭동 속 욕실에서 잠든 팀을 감시한다",
+    "summary": "개발도상국 도시의 폭동 속에서 내시가 장치에 연결되어 잠든 코브, 아서, 사이토를 지켜본다.",
+    "participant_character_ids": [
+     "CHAR_005",
+     "CHAR_001",
+     "CHAR_003",
+     "CHAR_002"
+    ],
+    "main_actor_character_id": "CHAR_005",
+    "time_id": "TIME_005",
+    "location_id": "LOCATION_005",
+    "cause": "다층 꿈 작전 수행",
+    "result": "폭발음이 점점 가까워짐",
+    "response": 0.5,
+    "continuation": 1,
+    "source_text": "김이 피어오르는 욕조 끝, 의자에 앉아 잠들어 있는 코브.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_006",
+    "order": 6,
+    "title": "토다시가 신칸센에서 잠든 네 사람을 감시한다",
+    "summary": "현실의 고속열차 객실에서 토다시가 튜브로 연결된 내시, 코브, 아서, 사이토를 지켜본다.",
+    "participant_character_ids": [
+     "CHAR_006",
+     "CHAR_005",
+     "CHAR_001",
+     "CHAR_003",
+     "CHAR_002"
+    ],
+    "main_actor_character_id": "CHAR_006",
+    "time_id": "TIME_006",
+    "location_id": "LOCATION_006",
+    "cause": "꿈 작전의 현실 층위 유지",
+    "result": "열차의 흔들림이 내시의 꿈에 반영됨",
+    "response": 0.5,
+    "continuation": 1,
+    "source_text": "노란색 튜브 두 개가 내시와 객실 내 다른 세 명의 잠든 남자들을 연결하고 있다",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_007",
+    "order": 7,
+    "title": "코브가 테라스에 나타난 맬과 대화한다",
+    "summary": "아서가 맬의 등장을 경계하고, 코브는 맬에게 그리워하지만 믿을 수 없다고 말한다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_003",
+     "CHAR_004"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_007",
+    "location_id": "LOCATION_007",
+    "cause": "코브의 무의식에서 맬의 투사체가 나타남",
+    "result": "코브가 맬과 함께 방으로 이동",
+    "response": 0.5,
+    "continuation": 1,
+    "source_text": "그리워해. 하지만 이제 널 믿을 수 없어.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_008",
+    "order": 8,
+    "title": "코브가 맬의 의자에 묶은 밧줄로 외벽을 내려가다 추락할 뻔한다",
+    "summary": "코브가 맬을 의자에 앉혀 밧줄 균형추로 삼고 하강하지만, 맬이 일어나 의자가 미끄러지며 코브가 4.5미터 떨어진다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_004"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_008",
+    "location_id": "LOCATION_008",
+    "cause": "금고 접근을 위한 침투",
+    "result": "다시 기어올라 주방으로 침투",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "약 4.5미터 아래로 떨어진 코브가 덜컥 멈춰 선다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_009",
+    "order": 9,
+    "title": "코브가 경비병을 사살하고 금고에서 봉투를 빼낸다",
+    "summary": "소음기 권총으로 경비병을 처리한 코브가 그림 뒤 금고를 열어 봉투를 챙기는데 불이 켜진다.",
+    "participant_character_ids": [
+     "CHAR_001"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_009",
+    "location_id": "LOCATION_009",
+    "cause": "사이토의 비밀 정보 탈취 목적",
+    "result": "봉투 확보 직후 발각",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "다이얼을 돌려 금고를 열고, 내부에서 봉투 하나를 꺼내 허리춤에 찔러 넣는다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_010",
+    "order": 10,
+    "title": "사이토와 맬이 아서를 인질로 코브를 포위한다",
+    "summary": "맬이 아서에게 총을 겨누자 코브가 총과 봉투를 내놓고, 사이토는 꿈임을 알고 있었다고 밝힌다.",
+    "participant_character_ids": [
+     "CHAR_002",
+     "CHAR_004",
+     "CHAR_001",
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_002",
+    "time_id": "TIME_010",
+    "location_id": "LOCATION_010",
+    "cause": "맬의 배신과 사이토의 사전 인지",
+    "result": "코브가 봉투를 넘김",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "내 물건을 훔치러 왔다는 걸? 아니면 우리가 지금 꿈을 꾸고 있다는 걸?",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_011",
+    "order": 11,
+    "title": "맬이 아서의 다리를 쏘자 코브가 아서를 사살해 깨운다",
+    "summary": "고통으로 협박하는 맬을 막기 위해 코브가 아서의 미간을 쏘고, 꿈 세계가 무너지기 시작한다.",
+    "participant_character_ids": [
+     "CHAR_004",
+     "CHAR_003",
+     "CHAR_001"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_011",
+    "location_id": "LOCATION_011",
+    "cause": "아서에 대한 고문 협박",
+    "result": "아서가 상위 층위에서 깨어나고 꿈 붕괴 시작",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "아서의 미간을 향해 방아쇠를 당긴다--",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_012",
+    "order": 12,
+    "title": "깨어난 아서가 사이토에게 장치를 재연결하려 한다",
+    "summary": "내시의 꿈 속 욕실에서 깨어난 아서가 사이토가 깨어나기 전에 루프를 다시 연결하려 서두른다.",
+    "participant_character_ids": [
+     "CHAR_003",
+     "CHAR_005",
+     "CHAR_002"
+    ],
+    "main_actor_character_id": "CHAR_003",
+    "time_id": "TIME_012",
+    "location_id": "LOCATION_012",
+    "cause": "아서의 꿈속 죽음",
+    "result": "재연결 시도 중 시간 부족",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "저들이 깨어나기 전에 루프를 다시 연결해야 해!",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_013",
+    "order": 13,
+    "title": "사이토가 가짜 봉투를 발견하고 코브는 진짜 문서를 읽으며 도주한다",
+    "summary": "맬이 집은 봉투는 백지였고, 코브는 두 번째 봉투의 타자 문서를 읽으며 계단을 달린다.",
+    "participant_character_ids": [
+     "CHAR_002",
+     "CHAR_004",
+     "CHAR_001"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_013",
+    "location_id": "LOCATION_013",
+    "cause": "코브가 미리 준비한 가짜 봉투",
+    "result": "경비병들의 추격",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "의아해진 맬이 종이들을 내려다본다. 전부 백지다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_014",
+    "order": 14,
+    "title": "내시가 코브를 깨우려 하고 깨어난 사이토가 아서를 위협한다",
+    "summary": "내시가 코브의 뺨을 때려도 깨지 않자 욕조로 밀어 넘기고, 석재에 깔려 깨어난 사이토는 아서에게 총을 겨눈다.",
+    "participant_character_ids": [
+     "CHAR_005",
+     "CHAR_001",
+     "CHAR_002",
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_005",
+    "time_id": "TIME_014",
+    "location_id": "LOCATION_014",
+    "cause": "재연결 실패로 코브를 깨워야 함",
+    "result": "코브의 몸이 욕조로 넘어감",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "내시가 코브의 이마에 손을 얹고 뒤로 거칠게 밀어붙인다--",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_015",
+    "order": 15,
+    "title": "물이 성곽을 덮치며 코브가 깨어나 사이토를 제압한다",
+    "summary": "욕조 낙수가 꿈에 물길로 반영되고, 깨어난 코브가 욕실로 들이닥친 사이토를 주먹으로 제압한다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_002",
+     "CHAR_005"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_015",
+    "location_id": "LOCATION_015",
+    "cause": "욕조로의 낙하(킥)",
+    "result": "사이토 결박",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "코브의 주먹이 사이토의 턱을 정확히 가격하며 난투극이 순식간에 끝난다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_016",
+    "order": 16,
+    "title": "코브가 사이토를 심문하자 사이토는 오디션이었다고 밝힌다",
+    "summary": "코브는 핵심 정보가 빠졌다며 추궁하고, 사이토는 자신들을 들여보낸 것이 오디션이었으며 불합격이라고 말한다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_002",
+     "CHAR_003",
+     "CHAR_005"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_016",
+    "location_id": "LOCATION_016",
+    "cause": "탈취한 정보의 불완전함",
+    "result": "코브가 고전적 위협 방식을 쓰려 함",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "오디션이었네.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_017",
+    "order": 17,
+    "title": "토다시가 내시에게 음악으로 킥 신호를 보낸다",
+    "summary": "카운트다운이 30에 이르자 토다시가 내시의 헤드폰으로 에디트 피아프의 노래를 튼다.",
+    "participant_character_ids": [
+     "CHAR_006",
+     "CHAR_005"
+    ],
+    "main_actor_character_id": "CHAR_006",
+    "time_id": "TIME_017",
+    "location_id": "LOCATION_017",
+    "cause": "약물 카운트다운 종료 임박",
+    "result": "꿈속에 느리고 낮은 음악이 울림",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "토다시는 첫 번째 카운트다운이 '30'에 도달하기를 기다렸다가 MP3 플레이어의 재생 버튼 을 누른다",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_018",
+    "order": 18,
+    "title": "사이토가 카펫 재질로 여전히 꿈속임을 간파한다",
+    "summary": "코브가 사이토를 바닥에 짓누르자 사이토는 울이어야 할 카펫이 폴리에스테르임을 알아채고 꿈속의 꿈임을 깨닫는다.",
+    "participant_character_ids": [
+     "CHAR_002",
+     "CHAR_001",
+     "CHAR_005"
+    ],
+    "main_actor_character_id": "CHAR_002",
+    "time_id": "TIME_018",
+    "location_id": "LOCATION_018",
+    "cause": "내시의 설계 실수",
+    "result": "작전 실패 확정",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "난 여전히 꿈속에 있어.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_019",
+    "order": 19,
+    "title": "꿈이 붕괴하고 팀이 열차에서 깨어나 흩어진다",
+    "summary": "폭도가 들이닥치며 꿈이 사라지고, 팀은 신칸센에서 깨어나 내시를 질책한 뒤 사이토를 재운 채 각자 도주한다. 사이토는 깨어나 주사 자국을 보고 미소 짓는다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_003",
+     "CHAR_005",
+     "CHAR_006",
+     "CHAR_002"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_019",
+    "location_id": "LOCATION_019",
+    "cause": "킥과 작전 실패",
+    "result": "팀 해산, 코브는 교토에서 하차",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "각자 알아서 살아남는다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_020",
+    "order": 20,
+    "title": "코브가 팽이로 현실을 확인하고 아이들과 통화한다",
+    "summary": "도쿄 아파트에서 팽이가 쓰러지는 것을 확인한 코브는 아이들의 전화를 받지만 언제 돌아올지 답하지 못하고, 엄마는 떠났다고 말한다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_007",
+     "CHAR_008",
+     "CHAR_016"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_020",
+    "location_id": "LOCATION_020",
+    "cause": "현실 확인 습관과 가족과의 단절",
+    "result": "아이들에 대한 그리움 심화",
+    "response": 0.5,
+    "continuation": 1,
+    "source_text": "지금은 못 간단다. 당분간은.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_021",
+    "order": 21,
+    "title": "코브와 아서가 실패를 인정하고 종적을 감추기로 한다",
+    "summary": "아서는 맬의 출현을 걱정하고, 코브는 코볼 사에 계획안을 넘기지 못해 도주해야 한다고 말한다. 아서는 부에노스아이레스로 가기로 한다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_021",
+    "location_id": "LOCATION_021",
+    "cause": "코볼 사 의뢰 실패",
+    "result": "옥상 헬기로 이동",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "지금쯤이면 우리가 실패했 다는 걸 알 거야. 종적을 감출 시간이야.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_022",
+    "order": 22,
+    "title": "사이토가 헬기에서 기다리며 인셉션을 의뢰한다",
+    "summary": "사이토는 코브를 팔아넘긴 내시를 넘기고, 생각을 심는 인셉션을 요구한다. 아서는 불가능하다고 하나 코브는 가능하다고 말한다.",
+    "participant_character_ids": [
+     "CHAR_002",
+     "CHAR_001",
+     "CHAR_003",
+     "CHAR_005"
+    ],
+    "main_actor_character_id": "CHAR_002",
+    "time_id": "TIME_022",
+    "location_id": "LOCATION_022",
+    "cause": "오디션에서 확인한 코브의 실력",
+    "result": "코브가 일단 거절",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "인셉션.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_023",
+    "order": 23,
+    "title": "사이토가 귀국을 조건으로 제시하자 코브가 의뢰를 수락한다",
+    "summary": "사이토는 경쟁사 후계자가 아버지의 제국을 해체하게 만들어 달라며, 성공 시 코브를 미국 아이들 곁으로 돌려보내겠다고 약속한다.",
+    "participant_character_ids": [
+     "CHAR_002",
+     "CHAR_001",
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_023",
+    "location_id": "LOCATION_023",
+    "cause": "아이들에게 돌아가려는 코브의 욕망",
+    "result": "팀 구성 지시",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "그러니 믿음의 도약을 해보겠나",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_024",
+    "order": 24,
+    "title": "코브가 과거에 인셉션에 성공한 적이 있다고 밝힌다",
+    "summary": "전용기에서 아서가 불가능하다고 하자 코브는 전에 해본 적이 있다고 말하고, 새 설계자를 찾으러 파리로 간다고 한다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_024",
+    "location_id": "LOCATION_024",
+    "cause": "인셉션 가능성에 대한 아서의 의심",
+    "result": "파리행 결정",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "전에 해본 적이 있으니까.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_025",
+    "order": 25,
+    "title": "코브가 마일즈 교수를 찾아가 설계자를 요청한다",
+    "summary": "코브는 아이들 선물을 맡기고, 맬 사건 이후 합법적으로 일할 수 없었으며 이번 일로 집에 돌아갈 수 있다며 뛰어난 학생을 부탁한다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_009"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_025",
+    "location_id": "LOCATION_025",
+    "cause": "새 설계자 필요, 맬이 코브의 설계를 방해",
+    "result": "마일즈가 제자를 추천",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "자네보다 더 뛰어난 아이가 있네.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_026",
+    "order": 26,
+    "title": "아리아드네가 미로 테스트를 통과한다",
+    "summary": "마일즈가 아리아드네를 소개하고, 코브는 2분 안에 1분짜리 미로를 그리라는 테스트를 내며 그녀의 원형 미로에 만족한다.",
+    "participant_character_ids": [
+     "CHAR_009",
+     "CHAR_010",
+     "CHAR_001"
+    ],
+    "main_actor_character_id": "CHAR_010",
+    "time_id": "TIME_026",
+    "location_id": "LOCATION_026",
+    "cause": "설계자 자질 검증",
+    "result": "아리아드네 채용",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "이제야 좀 그럴듯하네.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_027",
+    "order": 27,
+    "title": "아서가 파리 창고에 작업실을 차린다",
+    "summary": "아서가 먼지 쌓인 창고에 의자와 테이블, 꿈 공유 장치를 배치한다.",
+    "participant_character_ids": [
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_003",
+    "time_id": "TIME_027",
+    "location_id": "LOCATION_027",
+    "cause": "인셉션 작전 준비",
+    "result": "작업실 마련",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "은색 가방 여러 개를 늘어놓고 뚜껑을 열어",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_028",
+    "order": 28,
+    "title": "아리아드네가 카페에서 꿈속임을 깨닫고 꿈이 붕괴한다",
+    "summary": "코브가 꿈의 원리를 설명하며 어떻게 왔는지 묻자 아리아드네가 꿈임을 깨닫고, 카페가 폭발하며 깨어난다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_010"
+    ],
+    "main_actor_character_id": "CHAR_010",
+    "time_id": "TIME_028",
+    "location_id": "LOCATION_028",
+    "cause": "드림 셰어 첫 수업",
+    "result": "작업실에서 깨어남",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "세상에. 우리 지금 꿈꾸고 있는 거군요.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_029",
+    "order": 29,
+    "title": "아리아드네가 꿈속 도시를 접고 기억 속 다리를 재현한다",
+    "summary": "현실 5분이 꿈속 1시간임을 배운 뒤 다시 들어간 아리아드네가 거리를 접고 다리를 만들자 투사체가 적대적으로 변하고, 코브는 기억 속 장소 재현을 경고한다.",
+    "participant_character_ids": [
+     "CHAR_010",
+     "CHAR_001",
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_010",
+    "time_id": "TIME_029",
+    "location_id": "LOCATION_029",
+    "cause": "설계 연습",
+    "result": "투사체가 아리아드네를 붙잡음",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "상상해 낸 게 아니라, 기억해 낸 거군요...",
+    "certainty": "explicit"
+   }
+  ],
+  "times": [
+   {
+    "time_id": "TIME_001",
+    "event_id": "EVENT_001",
+    "time_info": [
+     0,
+     0
+    ],
+    "offset": 1,
+    "timeline_type": "flashforward",
+    "source_text": "새벽. 거세게 부서지는 파도.",
+    "expression": "[미래 장면] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_002",
+    "event_id": "EVENT_002",
+    "time_info": [
+     1,
+     0
+    ],
+    "offset": 1,
+    "timeline_type": "flashforward",
+    "source_text": "실내. 일본식 성곽, 품격 있는 식당 - 잠시 후",
+    "expression": "[미래 장면] 직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_003",
+    "event_id": "EVENT_003",
+    "time_info": [
+     7,
+     0
+    ],
+    "offset": 0,
+    "timeline_type": "main",
+    "source_text": "실내. 같은 품격 있는 식당 - 밤 (수년 전)",
+    "expression": "직전 사건보다 수년 전"
+   },
+   {
+    "time_id": "TIME_004",
+    "event_id": "EVENT_004",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "두 사람은 사이토가 떠나는 것을 지켜본다.",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_005",
+    "event_id": "EVENT_005",
+    "time_info": [
+     0,
+     2
+    ],
+    "offset": 1,
+    "timeline_type": "parallel",
+    "source_text": "지저분한 욕실 - 낮 (다른 시간대처럼 느껴짐)",
+    "expression": "[병행] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_006",
+    "event_id": "EVENT_006",
+    "time_info": [
+     0,
+     2
+    ],
+    "offset": 1,
+    "timeline_type": "parallel",
+    "source_text": "실내. 고속열차 객실 - 낮 (다른 시간대처럼 느껴짐)",
+    "expression": "[병행] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_007",
+    "event_id": "EVENT_007",
+    "time_info": [
+     1,
+     2
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "야외. 옥상 테라스, 일본식 성곽 - 밤",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_008",
+    "event_id": "EVENT_008",
+    "time_info": [
+     1,
+     0
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내. 침실 스위트룸, 일본식 성곽 - 잠시 후",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_009",
+    "event_id": "EVENT_009",
+    "time_info": [
+     1,
+     0
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내. 주방, 일본식 성곽 - 잠시 후",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_010",
+    "event_id": "EVENT_010",
+    "time_info": [
+     0,
+     0
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "갑자기 불이 켜진다.",
+    "expression": "직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_011",
+    "event_id": "EVENT_011",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "맬이 총구를 내려 아서의 다리를 쏜다.",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_012",
+    "event_id": "EVENT_012",
+    "time_info": [
+     0,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "parallel",
+    "source_text": "실내. 지저분한 욕실 - 낮",
+    "expression": "[병행] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_013",
+    "event_id": "EVENT_013",
+    "time_info": [
+     0,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내. 식당, 일본식 성곽 - 이어짐",
+    "expression": "직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_014",
+    "event_id": "EVENT_014",
+    "time_info": [
+     0,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "parallel",
+    "source_text": "실내. 지저분한 욕실 - 이어짐",
+    "expression": "[병행] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_015",
+    "event_id": "EVENT_015",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내. 지저분한 욕실 - 낮 코브가 깨어난다.",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_016",
+    "event_id": "EVENT_016",
+    "time_info": [
+     1,
+     0
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내. 낡은 호텔 방 - 잠시 후",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_017",
+    "event_id": "EVENT_017",
+    "time_info": [
+     0,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "parallel",
+    "source_text": "실내. 고속열차 객실 - 낮",
+    "expression": "[병행] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_018",
+    "event_id": "EVENT_018",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "난 항상 이 카펫이 마음에 안 들었지.",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_019",
+    "event_id": "EVENT_019",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "내시가 눈을 뜬다. 깨어났다.",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_020",
+    "event_id": "EVENT_020",
+    "time_info": [
+     3,
+     0
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "야외. 도쿄 - 해질녘",
+    "expression": "직전 사건보다 같은 날 다른 시간대 후"
+   },
+   {
+    "time_id": "TIME_021",
+    "event_id": "EVENT_021",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "두 시간 전에 코볼 사에 사이토의 확장 계획안을 넘겼어야 했어.",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_022",
+    "event_id": "EVENT_022",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "야외. 옥상 헬리패드 - 밤",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_023",
+    "event_id": "EVENT_023",
+    "time_info": [
+     2,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "야외. 비행장 - 잠시 후",
+    "expression": "직전 사건보다 수십 분~수 시간 후"
+   },
+   {
+    "time_id": "TIME_024",
+    "event_id": "EVENT_024",
+    "time_info": [
+     1,
+     0
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내. 전용 제트기 - 잠시 후",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_025",
+    "event_id": "EVENT_025",
+    "time_info": [
+     5,
+     3
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내. 국립건축학교 대강당 - 아침",
+    "expression": "직전 사건보다 수일 후"
+   },
+   {
+    "time_id": "TIME_026",
+    "event_id": "EVENT_026",
+    "time_info": [
+     1,
+     0
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내. 복도 - 잠시 후",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_027",
+    "event_id": "EVENT_027",
+    "time_info": [
+     3,
+     2
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "야외. 파리의 좁은 골목길 - 낮",
+    "expression": "직전 사건보다 같은 날 다른 시간대 후"
+   },
+   {
+    "time_id": "TIME_028",
+    "event_id": "EVENT_028",
+    "time_info": [
+     3,
+     3
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "야외. 파리의 카페 - 낮",
+    "expression": "직전 사건보다 같은 날 다른 시간대 후"
+   },
+   {
+    "time_id": "TIME_029",
+    "event_id": "EVENT_029",
+    "time_info": [
+     1,
+     0
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "현실의 5분이 꿈속에서는 한 시간 정도가 되지.",
+    "expression": "직전 사건보다 수초~수분 후"
+   }
+  ],
+  "locations": [
+   {
+    "location_id": "LOCATION_001",
+    "event_id": "EVENT_001",
+    "name": "림보 해변(일본식 성곽 아래)",
+    "description": "절벽 위 일본식 성곽이 보이는 해변. 이후 림보임이 드러남.",
+    "location_info": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "relation": "SAME",
+    "source_text": "그들 뒤로는 절벽이 솟아 있고, 그 정상 에는 일본식 성곽이 우뚝 서 있다."
+   },
+   {
+    "location_id": "LOCATION_002",
+    "event_id": "EVENT_002",
+    "name": "림보 일본식 성곽 식당",
+    "description": "흑단 식탁이 있는 품격 있는 식당",
+    "location_info": [
+     3,
+     1,
+     0,
+     0
+    ],
+    "relation": "NEAR",
+    "source_text": "실내. 일본식 성곽, 품격 있는 식당"
+   },
+   {
+    "location_id": "LOCATION_003",
+    "event_id": "EVENT_003",
+    "name": "사이토 꿈 속 성곽 식당(아서의 꿈, 2단계)",
+    "description": "추출 작전을 위한 꿈속 성곽 식당",
+    "location_info": [
+     8,
+     1,
+     1,
+     1
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 같은 품격 있는 식당 - 밤 (수년 전)"
+   },
+   {
+    "location_id": "LOCATION_004",
+    "event_id": "EVENT_004",
+    "name": "사이토 꿈 속 성곽 식당(아서의 꿈, 2단계)",
+    "description": "진동이 시작된 식당",
+    "location_info": [
+     8,
+     1,
+     1,
+     1
+    ],
+    "relation": "FAR",
+    "source_text": "진동이 시작되고, 두 사람은 흔들리는 잔을 붙잡는다."
+   },
+   {
+    "location_id": "LOCATION_005",
+    "event_id": "EVENT_005",
+    "name": "내시의 꿈 속 낡은 호텔 욕실(1단계)",
+    "description": "폭동이 일어난 개발도상국 도시의 호텔 욕실",
+    "location_info": [
+     8,
+     2,
+     1,
+     1
+    ],
+    "relation": "FAR",
+    "source_text": "부수고 불태우는 폭도들로 거리 가 가득 찬, 혼란에 빠진 개발도상국의 도시."
+   },
+   {
+    "location_id": "LOCATION_006",
+    "event_id": "EVENT_006",
+    "name": "현실 신칸센 객실",
+    "description": "일본을 달리는 고속열차 객실",
+    "location_info": [
+     8,
+     3,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 고속열차 객실"
+   },
+   {
+    "location_id": "LOCATION_007",
+    "event_id": "EVENT_007",
+    "name": "꿈 속 성곽 옥상 테라스",
+    "description": "검은 파도가 내려다보이는 테라스",
+    "location_info": [
+     8,
+     1,
+     2,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "야외. 옥상 테라스, 일본식 성곽 - 밤"
+   },
+   {
+    "location_id": "LOCATION_008",
+    "event_id": "EVENT_008",
+    "name": "꿈 속 성곽 침실 스위트룸 및 외벽",
+    "description": "프랜시스 베이컨 그림이 있는 침실과 성곽 외벽",
+    "location_info": [
+     8,
+     1,
+     3,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "야외. 일본식 성곽 외벽 - 이어짐"
+   },
+   {
+    "location_id": "LOCATION_009",
+    "event_id": "EVENT_009",
+    "name": "꿈 속 성곽 주방·복도·식당 금고",
+    "description": "그림 뒤 금고가 있는 식당",
+    "location_info": [
+     8,
+     1,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "벽에서 그림을 떼어내자 금고가 드러난다."
+   },
+   {
+    "location_id": "LOCATION_010",
+    "event_id": "EVENT_010",
+    "name": "꿈 속 성곽 식당",
+    "description": "흑단 식탁이 있는 식당",
+    "location_info": [
+     8,
+     1,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "방 저편 끝에 사이토가 서 있다."
+   },
+   {
+    "location_id": "LOCATION_011",
+    "event_id": "EVENT_011",
+    "name": "꿈 속 성곽 식당",
+    "description": "인테리어로 보아 아서의 머릿속인 공간",
+    "location_info": [
+     8,
+     1,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "여긴 아서의 머릿속이지?"
+   },
+   {
+    "location_id": "LOCATION_012",
+    "event_id": "EVENT_012",
+    "name": "내시의 꿈 속 욕실·호텔 방",
+    "description": "잠든 사이토가 있는 침실과 욕실",
+    "location_info": [
+     8,
+     2,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "아서가 가방을 낚아채 침실 문을 박차고 들어간다"
+   },
+   {
+    "location_id": "LOCATION_013",
+    "event_id": "EVENT_013",
+    "name": "꿈 속 성곽 식당·대계단",
+    "description": "무너지는 성곽",
+    "location_info": [
+     8,
+     1,
+     4,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "야외. 대계단, 일본식 성곽 - 이어짐"
+   },
+   {
+    "location_id": "LOCATION_014",
+    "event_id": "EVENT_014",
+    "name": "내시의 꿈 속 욕실·호텔 방",
+    "description": "코브가 욕조로 넘어지는 욕실",
+    "location_info": [
+     8,
+     2,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 지저분한 욕실 - 이어짐"
+   },
+   {
+    "location_id": "LOCATION_015",
+    "event_id": "EVENT_015",
+    "name": "내시의 꿈 속 욕실",
+    "description": "코브가 깨어나는 욕조",
+    "location_info": [
+     8,
+     2,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 지저분한 욕실 - 낮"
+   },
+   {
+    "location_id": "LOCATION_016",
+    "event_id": "EVENT_016",
+    "name": "내시의 꿈 속 낡은 호텔 방",
+    "description": "사이토가 밀회 장소라 믿은 은신처",
+    "location_info": [
+     8,
+     2,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "보안 책임자조차 모르는 비밀 은신처인데"
+   },
+   {
+    "location_id": "LOCATION_017",
+    "event_id": "EVENT_017",
+    "name": "현실 신칸센 객실",
+    "description": "토다시가 장치를 조작하는 객실",
+    "location_info": [
+     8,
+     3,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 고속열차 객실 - 낮"
+   },
+   {
+    "location_id": "LOCATION_018",
+    "event_id": "EVENT_018",
+    "name": "내시의 꿈 속 낡은 호텔 방",
+    "description": "폴리에스테르 카펫이 깔린 방",
+    "location_info": [
+     8,
+     2,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "그런데 지금 난 폴리에스테르 위에 뺨을 대고 누워 있군."
+   },
+   {
+    "location_id": "LOCATION_019",
+    "event_id": "EVENT_019",
+    "name": "현실 신칸센 객실(일본 시골)",
+    "description": "푸른 시골 풍경을 달리는 신칸센",
+    "location_info": [
+     8,
+     3,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "신칸센이 푸른 풍경을 가르며 질주한다."
+   },
+   {
+    "location_id": "LOCATION_020",
+    "event_id": "EVENT_020",
+    "name": "도쿄의 아파트",
+    "description": "고층 빌딩 내 아파트",
+    "location_info": [
+     8,
+     3,
+     2,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 도쿄의 아파트 - 이어짐"
+   },
+   {
+    "location_id": "LOCATION_021",
+    "event_id": "EVENT_021",
+    "name": "도쿄 아파트 복도",
+    "description": "엘리베이터로 이어지는 복도",
+    "location_info": [
+     8,
+     3,
+     2,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 복도 - 이어짐"
+   },
+   {
+    "location_id": "LOCATION_022",
+    "event_id": "EVENT_022",
+    "name": "도쿄 옥상 헬리패드의 헬리콥터",
+    "description": "사이토가 기다리던 헬기 내부",
+    "location_info": [
+     8,
+     3,
+     2,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 헬리패드 위 헬리콥터 - 이어짐"
+   },
+   {
+    "location_id": "LOCATION_023",
+    "event_id": "EVENT_023",
+    "name": "비행장(헬리콥터 내부)",
+    "description": "전용 제트기 옆 착륙지",
+    "location_info": [
+     8,
+     3,
+     3,
+     1
+    ],
+    "relation": "FAR",
+    "source_text": "헬리콥터가 전용 제트기 옆에 착륙한다."
+   },
+   {
+    "location_id": "LOCATION_024",
+    "event_id": "EVENT_024",
+    "name": "전용 제트기",
+    "description": "파리로 향하는 기내",
+    "location_info": [
+     8,
+     3,
+     3,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 전용 제트기 - 잠시 후"
+   },
+   {
+    "location_id": "LOCATION_025",
+    "event_id": "EVENT_025",
+    "name": "파리 국립건축학교 강의실",
+    "description": "마일즈 교수의 강의실",
+    "location_info": [
+     8,
+     3,
+     4,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 국립건축학교 대강당 - 아침"
+   },
+   {
+    "location_id": "LOCATION_026",
+    "event_id": "EVENT_026",
+    "name": "파리 국립건축학교 복도 및 옥상",
+    "description": "파리 시내가 내려다보이는 옥상",
+    "location_info": [
+     8,
+     3,
+     4,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "야외. 국립건축학교 옥상 - 잠시 후"
+   },
+   {
+    "location_id": "LOCATION_027",
+    "event_id": "EVENT_027",
+    "name": "파리 창고 작업실",
+    "description": "넓고 먼지 쌓인 창고",
+    "location_info": [
+     8,
+     3,
+     5,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "넓고 먼지 쌓인 창고."
+   },
+   {
+    "location_id": "LOCATION_028",
+    "event_id": "EVENT_028",
+    "name": "꿈 속 파리 카페",
+    "description": "아리아드네의 첫 꿈 공유 공간",
+    "location_info": [
+     8,
+     4,
+     1,
+     1
+    ],
+    "relation": "FAR",
+    "source_text": "우리는 지금 작업실에서 잠들어 있는 중입니다."
+   },
+   {
+    "location_id": "LOCATION_029",
+    "event_id": "EVENT_029",
+    "name": "꿈 속 파리 거리와 다리",
+    "description": "접히는 정육면체 도시와 센강 다리",
+    "location_info": [
+     8,
+     4,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "다리는 이제 센강을 가로지르고 있다."
+   }
+  ]
+ },
+ "contradictions": []
+}

@@ -1,0 +1,21 @@
+# 이미지에 들어가면 안 되는 것들 (비밀값·로컬 산출물·개발 전용)
+.git
+.github
+.venv
+.env
+.env.*
+!.env.example
+backups
+uploads
+logs
+tests
+docs
+glitch_backend.egg-info
+__pycache__
+**/__pycache__
+.pytest_cache
+*.bat
+*.ps1
+compare.csv
+# AI 서버는 별도 프로세스·별도 의존성 (몸통 이미지에 넣지 않는다)
+ai_server

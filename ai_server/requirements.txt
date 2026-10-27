@@ -1,0 +1,12 @@
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.6
+anthropic>=0.40
+python-dotenv>=1.0
+
+# scope_ai 임베딩(BGE-M3, ~2GB). REVIEW_MODE=llm + EMBEDDING_MODE=bge 일 때 필요.
+# 처음 로드할 때 HuggingFace 에서 모델을 내려받는다.
+# 설치 없이 배선만 볼 때는 EMBEDDING_MODE=hash 로 둔다(의미 유사도 없음).
+sentence-transformers>=3.0
+torch>=2.0
+numpy>=1.24

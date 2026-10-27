@@ -1,0 +1,461 @@
+{
+  "worldview_rules": [
+    {
+      "rule_id": "RULE_001",
+      "content": "소마(Soma)를 통한 평온 유지 시스템",
+      "description": "헤일트라움 세계의 주민들이 소마라는 물질/기술을 통해 싸움, 경쟁, 아픔, 힘듦 없는 평온한 상태를 유지하고 있다.",
+      "source_text": "이곳은 싸움도 경쟁도, 아픔도 힘듦도 없는 세계. '소마'를 통해서 평온한 상태를 유지하고 있습니다.",
+      "certainty": "explicit"
+    },
+    {
+      "rule_id": "RULE_002",
+      "content": "설계된 수명 단축 정책",
+      "description": "세계 안정을 위해 인류의 사망 시기를 미리 설정하고 단축하는 정책이 시행되고 있다.",
+      "source_text": "그 방법이 '수명 단축'인가? / 사망 시기는, 점진적으로 뒤로 미룰 생각입니다.",
+      "certainty": "explicit"
+    },
+    {
+      "rule_id": "RULE_003",
+      "content": "헤일트라움의 시스템 구조",
+      "description": "강력한 보안프로그램과 시스템으로 외부 공격으로부터 보호되고 있으며, 플레이어는 휴머노이드 로봇 신체를 통해 세계에 접속한다.",
+      "source_text": "강력한 보안프로그램과 시스템 아래, 그들의 공격은 '시도'에 그쳤습니다.",
+      "certainty": "explicit"
+    },
+    {
+      "rule_id": "RULE_004",
+      "content": "시간 초월적 해킹 공격",
+      "description": "아우겐의 공격이 미래 시간대(헤일트라움)뿐 아니라 과거 시간대(플레이어의 현재)에서도 동시에 진행되고 있다.",
+      "source_text": "같은 수법의 공격이 '과거'. 즉, 당신의 시간대에서 날아오고 있습니다.",
+      "certainty": "explicit"
+    },
+    {
+      "rule_id": "RULE_005",
+      "content": "로봇 신체 일련번호 체계",
+      "description": "헤일트라움에 접속한 각 개인은 고유의 일련번호를 가진 휴머노이드 로봇으로 배정받는다.",
+      "source_text": "당신이 사용하는 로봇의 일련번호는 'α-0760'.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_001",
+      "name": "클라인",
+      "aliases": [
+        "클라인 브루더",
+        "Klein Bruder"
+      ],
+      "description": "헤일트라움의 운영자 또는 가이드. 30대 초반의 외모에 비해 성숙한 목소리와 말투를 가지고 있으며, 플레이어에게 게임 설명과 임무를 부여하는 역할을 한다.",
+      "traits": [
+        {
+          "trait": "30대 초반의 외모",
+          "trait_type": "appearance",
+          "source_text": "30대 초반 정도의 젊은 남자",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "새하얀 셔츠에 풀어 해친 넥타이",
+          "trait_type": "appearance",
+          "source_text": "새하얀 셔츠에 풀어 해친 넥타이를 한",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "외모에 비해 나이 든 느낌의 목소리와 말투",
+          "trait_type": "appearance",
+          "source_text": "외견에 비해 목소리나 말투는 훨씬 나이 든 느낌",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "단정한 말투",
+          "trait_type": "personality",
+          "source_text": "남자는 단정한 말투로 이것저것 설명하기 시작했다",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "높은 지능형 AI 또는 강력한 음성인식 능력",
+          "trait_type": "ability",
+          "source_text": "아, 대화는 음성인식, 조작법은 지금 보여드리겠습니다.",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "세심한 성격",
+          "trait_type": "personality",
+          "source_text": "뭔가를 살피는 듯한 시선 / 아, 그러고 보니 제 소개를 안 했군요",
+          "certainty": "inferred"
+        }
+      ],
+      "relationships": [
+        {
+          "target_character_id": "CHAR_002",
+          "relationship_type": "unknown",
+          "description": "플레이어에게 임무를 부여하고 게임을 진행시키는 역할을 한다.",
+          "sentiment": "neutral",
+          "source_text": "당신이 이 영상을 보는 첫 번째 인물이군요. / 당신의 행동이, 우리의 미래를 바꿀 겁니다.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_003",
+      "source_text": "저는 클라인이라고 합니다. 클라인 브루더(Klein Bruder).",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어",
+      "aliases": [
+        "과거의 누군가",
+        "α-0760"
+      ],
+      "description": "게임의 주인공. 현대 시간대에 거주하는 대학생이며, 이상한 게임을 다운로드한 후 헤일트라움의 휴머노이드 로봇 신체로 접속하게 된다.",
+      "traits": [
+        {
+          "trait": "대학생",
+          "trait_type": "status",
+          "source_text": "부모님도, 동생도 모두 각자 나가고 집에는 나 혼자뿐이다",
+          "certainty": "inferred"
+        },
+        {
+          "trait": "스토리가 있는 퍼즐 풀이형 게임을 선호",
+          "trait_type": "habit",
+          "source_text": "스토리가 있는 퍼즐 풀이형 게임을 좋아하지만",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "호기심이 강한 성격",
+          "trait_type": "personality",
+          "source_text": "호기심이 앞서 눌러보았다",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "음성 명령에 반응하는 로봇 신체 조작 가능",
+          "trait_type": "ability",
+          "source_text": "사전에 말씀드렸듯, 음성으로 대화하시면 됩니다",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "휴머노이드 로봇 신체로 변환됨",
+          "trait_type": "status",
+          "source_text": "똑같은 디자인의 로봇이었다",
+          "certainty": "explicit"
+        }
+      ],
+      "relationships": [
+        {
+          "target_character_id": "CHAR_001",
+          "relationship_type": "colleague",
+          "description": "클라인으로부터 헤일트라움 세계에 대한 정보를 받고 임무를 수행해야 하는 관계",
+          "sentiment": "neutral",
+          "source_text": "당신의 행동이, 우리의 미래를 바꿀 겁니다",
+          "certainty": "explicit"
+        },
+        {
+          "target_character_id": "CHAR_004",
+          "relationship_type": "family",
+          "description": "어머니가 설계된 수명 단축 정책으로 인해 사망했음을 암시하는 관계",
+          "sentiment": "negative",
+          "source_text": "내 어머니는, 우리의 가족들은! 모두 그렇게 죽었어야 하는 거냐고...!",
+          "certainty": "uncertain"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_001",
+      "source_text": "꿈에서 깼다",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_003",
+      "name": "백발의 노년 남자",
+      "aliases": [],
+      "description": "영상 회의에서 여자와 논쟁하는 인물. 설계된 수명 단축 정책을 옹호하는 입장을 취한다.",
+      "traits": [
+        {
+          "trait": "백발이 성성한 노년",
+          "trait_type": "appearance",
+          "source_text": "백발이 성성한 노년의 남자",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "정장 차림",
+          "trait_type": "appearance",
+          "source_text": "흐트러짐 없는 정장 차림의 남자",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "죄책감과 슬픔, 그리고 단단한 의지를 가짐",
+          "trait_type": "personality",
+          "source_text": "죄책감과 슬픔, 하지만 단단한 의지가 섞인 얼굴로",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "수명 단축 정책의 옹호자",
+          "trait_type": "background",
+          "source_text": "이것이 최선입니다",
+          "certainty": "explicit"
+        }
+      ],
+      "relationships": [
+        {
+          "target_character_id": "CHAR_005",
+          "relationship_type": "colleague",
+          "description": "영상 회의에서 함께 논쟁하는 관계",
+          "sentiment": "mixed",
+          "source_text": "반대편에 홀로 앉은 백발이 성성한 노년의 남자는 / 여자는 책상 위, 하얀 약통을 바라보며 말했다",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_001",
+      "source_text": "반대편에 홀로 앉은 백발이 성성한 노년의 남자는",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_004",
+      "name": "플레이어의 어머니",
+      "aliases": [],
+      "description": "플레이어의 어머니. 설계된 수명 단축 정책으로 인해 사망한 것으로 추정된다.",
+      "traits": [
+        {
+          "trait": "설계된 수명 단축 정책으로 인해 사망",
+          "trait_type": "status",
+          "source_text": "내 어머니는, 우리의 가족들은! 모두 그렇게 죽었어야 하는 거냐고...!",
+          "certainty": "inferred"
+        }
+      ],
+      "relationships": [
+        {
+          "target_character_id": "CHAR_002",
+          "relationship_type": "family",
+          "description": "플레이어의 어머니",
+          "sentiment": "negative",
+          "source_text": "내 어머니는, 우리의 가족들은!",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_001",
+      "source_text": "내 어머니는, 우리의 가족들은! 모두 그렇게 죽었어야 하는 거냐고...!",
+      "certainty": "inferred"
+    },
+    {
+      "character_id": "CHAR_005",
+      "name": "여자 (정책 비판자)",
+      "aliases": [],
+      "description": "영상 회의에서 백발의 노년 남자와 논쟁하는 여자. 설계된 수명 단축 정책에 강하게 반발한다.",
+      "traits": [
+        {
+          "trait": "설계된 수명 단축 정책에 강한 분노와 반감을 표함",
+          "trait_type": "personality",
+          "source_text": "참았던 분노가 터진 듯 여자가 자리를 박차고 일어섰다",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "감정 표현이 격함",
+          "trait_type": "personality",
+          "source_text": "여자는 감정이 고조된 목소리로 덧붙였다",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "정책 폐지를 요구하는 입장",
+          "trait_type": "background",
+          "source_text": "그 평화로운 세상에서는, 죽음마저 설계되고 있죠",
+          "certainty": "explicit"
+        }
+      ],
+      "relationships": [
+        {
+          "target_character_id": "CHAR_003",
+          "relationship_type": "colleague",
+          "description": "영상 회의에서 정책을 두고 대립하는 관계",
+          "sentiment": "negative",
+          "source_text": "약통에서 시선을 올려, 남자를 똑바로 바라보고 비꼬듯",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_001",
+      "source_text": "책상에 앉은 여자의 한마디로 완전히 뒤바뀌었다",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_006",
+      "name": "아우겐",
+      "aliases": [],
+      "description": "헤일트라움의 평화를 깨려는 세력. 처음에는 물리적 공작을 시도했으나 최근 1년간 전산 해킹 방식으로 변화했고, 과거 시간대(플레이어의 현재)에서도 공격을 감행 중이다.",
+      "traits": [
+        {
+          "trait": "헤일트라움 평화 파괴 세력",
+          "trait_type": "background",
+          "source_text": "이 평화를 깨려는 세력이 생겨났죠. 저는 '아우겐(Augen)'이라고 부릅니다",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "초기 공격: 물리적 공작",
+          "trait_type": "ability",
+          "source_text": "물리적인 공작뿐이던 공격이",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "최근 공격: 전산 해킹",
+          "trait_type": "ability",
+          "source_text": "전산상의 '해킹'으로 변화했고",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "예측 어려운 공격 방식 사용",
+          "trait_type": "ability",
+          "source_text": "완전히 새로운 방식, 예측하기 어려운 움직임을 보이기 시작했습니다",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "시간 초월적 공격 능력",
+          "trait_type": "ability",
+          "source_text": "같은 수법의 공격이 '과거'. 즉, 당신의 시간대에서 날아오고 있습니다",
+          "certainty": "explicit"
+        }
+      ],
+      "relationships": [
+        {
+          "target_character_id": "CHAR_001",
+          "relationship_type": "enemy",
+          "description": "헤일트라움의 안정을 위협하는 적대 세력",
+          "sentiment": "negative",
+          "source_text": "그들의 인원, 규모 등을 파악하고, 합의점을 찾아주십시오",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_004",
+      "source_text": "이 평화를 깨려는 세력이 생겨났죠. 저는 '아우겐(Augen)'이라고 부릅니다",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_001",
+      "order": 1,
+      "title": "설계된 수명 단축 정책을 둘러싼 회의",
+      "summary": "여자가 백발의 노년 남자에게 헤일트라움의 수명 단축 정책이 진정한 행복인지 질문하며 강하게 반발한다.",
+      "participant_character_ids": [
+        "CHAR_003",
+        "CHAR_005"
+      ],
+      "main_actor_character_id": "CHAR_005",
+      "cause": "헤일트라움의 평화를 유지하기 위한 수명 단축 정책에 대한 윤리적 문제 제기",
+      "result": "여자가 분노하며 책상의 약통을 던지고 시야가 흐려지며 암전됨",
+      "source_text": "설계된 행복이, 진의(眞意)로서의 그것에 다가설 수 있다고 봅니까? / 그 평화로운 세상에서는, 죽음마저 설계되고 있죠 / 말이 끝나기가 무섭게 여자는 책상의 약통을 들어 던졌다",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_002",
+      "order": 2,
+      "title": "악몽에서 깨어남",
+      "summary": "플레이어가 영상 회의의 상황이 담긴 악몽에서 깨어나며 감각이 사라지는 혼란을 경험한다.",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "main_actor_character_id": "CHAR_002",
+      "cause": "설계된 수명 단축 정책에 대한 회의 장면의 악몽",
+      "result": "엄청난 비명과 함께 깨어남, 침대 시트가 땀으로 흠뻑 젖어있음",
+      "source_text": "꿈에서 깼다 / 으아아아악!!! / 침대 시트가 땀으로 흠뻑 젖어있었다",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_003",
+      "order": 3,
+      "title": "의문의 게임 다운로드 및 설치",
+      "summary": "플레이어가 이름과 설명이 모두 깨진 오류 게임을 호기심으로 다운로드한 후, 자동으로 재생되는 클라인의 영상 메시지를 받는다.",
+      "participant_character_ids": [
+        "CHAR_002",
+        "CHAR_001"
+      ],
+      "main_actor_character_id": "CHAR_002",
+      "cause": "점심 전에 깬 후 심심함으로 컴퓨터를 켜고 게임 스토어에 접속함",
+      "result": "클라인의 영상이 자동 재생되며 음성인식 기능 작동 확인, 조작법 설명 화면 출력",
+      "source_text": "어? 이건 뭐야 / 이름도 아이콘도 깨져서 안 보이고, 설명 탭에도 아무 내용이 없는, 말 그대로 '오류' 그 자체인 게임이었다 / 안녕하십니까, 과거의 누군가여",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_004",
+      "order": 4,
+      "title": "헤일트라움 세계 접속 및 임무 부여",
+      "summary": "플레이어가 로봇 신체 α-0760으로 변환되어 헤일트라움의 1층 창고에 접속하고, 클라인으로부터 아우겐 세력의 해킹 공격에 대응하고 합의점을 찾을 것을 지시받는다.",
+      "participant_character_ids": [
+        "CHAR_002",
+        "CHAR_001",
+        "CHAR_006"
+      ],
+      "main_actor_character_id": "CHAR_002",
+      "cause": "의문의 게임을 시작하면서 헤일트라움 세계에 강제 접속됨",
+      "result": "플레이어가 로봇 신체를 확인하고, 아우겐 세력과의 갈등을 해결할 임무를 받음",
+      "source_text": "여기는 '헤일트라움(Heiltraum)'입니다 / 당신이 사용하는 로봇의 일련번호는 'α-0760' / 이곳은 싸움도 경쟁도, 아픔도 힘듦도 없는 세계. '소마'를 통해서 평온한 상태를 유지하고 있습니다 / 그들의 인원, 규모 등을 파악하고, 합의점을 찾아주십시오",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "TIME_001",
+      "expression": "악몽의 회의 장면",
+      "description": "플레이어가 꾼 악몽 속의 과거 시점",
+      "source_text": "꿈에서 깼다",
+      "certainty": "inferred"
+    },
+    {
+      "time_id": "TIME_002",
+      "expression": "목요일 점심 전",
+      "description": "악몽에서 깬 후 점심시간 전 시점",
+      "source_text": "오늘은 강의가 없는 목요일 / 뭔가 찝찝한 꿈 때문에 점심 전에 깨버렸다",
+      "certainty": "explicit"
+    },
+    {
+      "time_id": "TIME_003",
+      "expression": "목요일",
+      "description": "강의가 없는 날로, 플레이어가 게임을 시작한 날",
+      "source_text": "오늘은 강의가 없는 목요일",
+      "certainty": "explicit"
+    },
+    {
+      "time_id": "TIME_004",
+      "expression": "1년 전까지",
+      "description": "아우겐의 공격 방식이 물리적 공작에 머물던 시간대",
+      "source_text": "강력한 보안프로그램과 시스템 아래, 그들의 공격은 '시도'에 그쳤습니다. 1년 전까지는요",
+      "certainty": "explicit"
+    },
+    {
+      "time_id": "TIME_005",
+      "expression": "최근 1년간",
+      "description": "아우겐의 공격 방식이 전산 해킹으로 변화한 시간대",
+      "source_text": "완전히 새로운 방식, 예측하기 어려운 움직임을 보이기 시작했습니다",
+      "certainty": "explicit"
+    },
+    {
+      "time_id": "TIME_006",
+      "expression": "현재 (플레이어의 과거 시간대)",
+      "description": "플레이어가 살고 있는 현재 시점에서 아우겐의 해킹 공격이 진행 중",
+      "source_text": "같은 수법의 공격이 '과거'. 즉, 당신의 시간대에서 날아오고 있습니다",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_001",
+      "name": "회의실",
+      "description": "창문이 없고 천장이 낮으며, 검정과 흰색이 부딪쳐 만든 회빛의 방. 책상 위에 하얀 약통이 놓여있다.",
+      "source_text": "창문이 없고 천장이 낮으며, 검정과 흰색이 부딪쳐 만들어 낸, 완전한 회빛의 방",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "LOC_002",
+      "name": "플레이어의 집",
+      "description": "플레이어가 혼자 거주 중인 집. 부모님과 동생은 각자 나가있다. 컴퓨터가 있다.",
+      "source_text": "부모님도, 동생도 모두 각자 나가고 집에는 나 혼자뿐이다",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "LOC_003",
+      "name": "헤일트라움의 1층 창고",
+      "description": "헤일트라움 세계의 1층에 위치한 창고. 새하얀 벽으로 이루어진 공간이며, 열 대 정도의 휴머노이드 로봇들이 줄지어 전원에 연결되어 있다.",
+      "source_text": "여기는 '헤일트라움(Heiltraum)'입니다. 우리 세계를 유지하는 안식의 산실이죠. 지금 있는 곳은 1층의 창고입니다 / 모니터는 천천히 밝아졌다. 처음에 눈에 들어온 건 새하얀 벽",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "LOC_004",
+      "name": "헤일트라움",
+      "description": "싸움도 경쟁도, 아픔도 힘듦도 없는 평화로운 세계. 소마라는 물질/기술을 통해 주민들의 평온한 상태를 유지하고 있으며, 강력한 보안 시스템으로 보호되고 있다.",
+      "source_text": "이곳은 싸움도 경쟁도, 아픔도 힘듦도 없는 세계. '소마'를 통해서 평온한 상태를 유지하고 있습니다",
+      "certainty": "explicit"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+# ══════════════════════════════════════════════════════════
+#  Backend (Python / FastAPI)
+# ══════════════════════════════════════════════════════════
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# 가상환경 (커밋 금지: 거대함)
+.venv/
+venv/
+env/
+
+# 런타임 데이터 (사용자 업로드/썸네일)
+uploads/
+
+# DB 백업 덤프 (backup.bat 산출물 — 크고 비밀데이터 포함)
+backups/
+
+# 테스트/도구 캐시
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ══════════════════════════════════════════════════════════
+#  Frontend (Node / Firebase)
+# ══════════════════════════════════════════════════════════
+node_modules/
+.firebase/
+firebase-debug.log*
+firebase-debug.*.log*
+.dataconnect
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+coverage
+.nyc_output
+
+# ══════════════════════════════════════════════════════════
+#  공통
+# ══════════════════════════════════════════════════════════
+# 환경설정: 실제 .env 는 비밀값 포함 → 커밋 금지 (.env.example 만 공유)
+.env
+.env.*
+!.env.example
+
+# 로그
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 런타임
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 호스트 보안 점검 보고서 (공인 IP·호스트명·계정명 포함 — 커밋 금지)
+docs/host_exposure_audit_*.md

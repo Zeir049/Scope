@@ -1,0 +1,2041 @@
+{
+ "chapter_no": 3,
+ "title": "림보",
+ "text_sha1": "32de61d68a0e0dcf1c8b10d7ea4d5e74a0857454",
+ "visual": {
+  "worldview_rules": [
+   {
+    "rule_id": "RULE_016",
+    "content": "꿈꾸는 자의 육체가 받는 물리적 자극이 꿈 세계에 반영된다",
+    "description": "물에 빠지면 꿈에 물이 쏟아지고, 차량이 흔들리면 지진·중력 왜곡이 생기며, 자유낙하 시 하위 단계는 무중력이 된다.",
+    "source_text": "승합차가 자유낙하 상태가 되면 무중력이 되니까",
+    "certainty": "explicit"
+   },
+   {
+    "rule_id": "RULE_026",
+    "content": "꿈 단계가 깊어질수록 불안정해진다",
+    "description": "3단계 아래에서는 사소한 난기류에도 지진이 일어나므로 강력한 진정제가 필요하다.",
+    "source_text": "3단계 아래에서는 사소한 난기류만으로도 지진이 일어날 텐데.",
+    "certainty": "explicit"
+   }
+  ],
+  "characters": [
+   {
+    "character_id": "CHAR_001",
+    "name": "코브",
+    "aliases": [
+     "돔",
+     "돔 코브",
+     "턱수염을 기른 남자",
+     "로드 그린",
+     "찰스",
+     "아빠"
+    ],
+    "description": "최고의 추출자. 아내 맬의 죽음에 대한 혐의로 미국에 돌아가지 못하고 아이들과 떨어져 지낸다. 사이토의 의뢰로 인셉션을 수행한다.",
+    "first_appearance_event_id": "EVENT_001",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "35세의 말쑥한 미남",
+      "trait_type": "appearance",
+      "source_text": "코브는 35세로, 말쑥한 수트 차림의 미남이다.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "가장 노련한 추출자",
+      "trait_type": "ability",
+      "source_text": "제가 가장 노련한 추출자이기 때문입니다.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "백철제 팽이를 토템으로 사용",
+      "trait_type": "habit",
+      "source_text": "백철제 팽이를 꺼내 테이블 위에 돌린다...",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "맬에 대한 죄책감으로 무의식 속 맬의 투사체가 작전을 방해함",
+      "trait_type": "status",
+      "source_text": "당신의 죄책감이 맬의 형상을 빚어내고 힘 을 실어주고 있는 거예요.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "맬과 림보에서 50년을 보냈고 맬에게 인셉션을 했던 경험이 있음",
+      "trait_type": "background",
+      "source_text": "내 아내에게 직접 인셉션을 감행했고, 그 끔찍한 대가를 치렀으니까...",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "더 이상 직접 꿈을 설계하지 않음",
+      "trait_type": "status",
+      "source_text": "맬이 가만두지 않아요.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "기억으로 만든 꿈속에서만 꿈을 꿀 수 있음",
+      "trait_type": "status",
+      "source_text": "이게 내가 아직 꿈을 꿀 수 있는 유일한 방법이니까요.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "기차를 싫어함",
+      "trait_type": "personality",
+      "source_text": "난 기차가 질색이야.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_004",
+      "relationship_type": "lover",
+      "description": "사망한 아내. 투사체로 계속 나타나며 그리움과 죄책감의 대상",
+      "sentiment": "mixed",
+      "source_text": "그리워해. 하지만 이제 널 믿을 수 없어.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_007",
+      "relationship_type": "family",
+      "description": "아들",
+      "sentiment": "positive",
+      "source_text": "제임스예요. 내 아들.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_008",
+      "relationship_type": "family",
+      "description": "딸",
+      "sentiment": "positive",
+      "source_text": "그리고 필리파예요.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_003",
+      "relationship_type": "colleague",
+      "description": "오랜 동료 포인트맨",
+      "sentiment": "positive",
+      "source_text": "포인트맨으로서는 훌륭해.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_002",
+      "relationship_type": "other",
+      "description": "처음엔 추출 표적이었다가 인셉션 의뢰인이 됨",
+      "sentiment": "mixed",
+      "source_text": "팀을 꾸리게, 코브 씨.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_009",
+      "relationship_type": "family",
+      "description": "장인이자 드림 셰어를 가르쳐준 스승",
+      "sentiment": "positive",
+      "source_text": "교수님이 제게 가르쳐주신 게 이거잖아요.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_010",
+      "relationship_type": "colleague",
+      "description": "새로 영입한 설계자이자 자신의 비밀을 아는 유일한 팀원",
+      "sentiment": "positive",
+      "source_text": "당신 도움 없이는 난 영영 아이들에게 돌아가지 못해요.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_011",
+      "relationship_type": "colleague",
+      "description": "예전부터 알던 위조꾼",
+      "sentiment": "positive",
+      "source_text": "그래서 널 찾아온 거야.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_013",
+      "relationship_type": "enemy",
+      "description": "인셉션 표적",
+      "sentiment": "neutral",
+      "source_text": "표적은 로버트 피셔.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_005",
+      "relationship_type": "colleague",
+      "description": "배신한 설계자",
+      "sentiment": "negative",
+      "source_text": "자네를 팔아넘겼더군.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_002",
+    "name": "사이토",
+    "aliases": [
+     "노년의 일본인 남성",
+     "젊은 일본인 남성"
+    ],
+    "description": "일본의 강력한 기업가. 피셔-모로우의 경쟁사 수장으로 코브에게 인셉션을 의뢰하고 직접 작전에 동행한다.",
+    "first_appearance_event_id": "EVENT_002",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "막강한 재력과 권력(항공사를 즉석에서 인수)",
+      "trait_type": "ability",
+      "source_text": "항공사를 인수했소.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "날카로운 관찰력으로 꿈임을 간파함",
+      "trait_type": "ability",
+      "source_text": "그런데 지금 난 폴리에스테르 위에 뺨을 대고 누워 있군.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "1단계에서 복부 총상을 입고 3단계에서 사망해 림보로 떨어짐",
+      "trait_type": "status",
+      "source_text": "사이토가 숨을 거둔다.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "림보에서 90세 노인이 됨",
+      "trait_type": "status",
+      "source_text": "노년의 일본인 남성(90세의 사이토)이 그를 지켜보고 있다.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "superior",
+      "description": "고용주로서 코브의 귀국을 약속",
+      "sentiment": "mixed",
+      "source_text": "집으로 돌아가고 싶지 않나? 미국으로. 아이들에게로.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_013",
+      "relationship_type": "enemy",
+      "description": "경쟁 기업 후계자",
+      "sentiment": "negative",
+      "source_text": "내 가장 강력한 경쟁자는 건강이 악화된 노인이야.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_003",
+    "name": "아서",
+    "aliases": [],
+    "description": "코브의 포인트맨. 꼼꼼하고 신중하며 2단계 꿈의 꿈꾸는 자.",
+    "first_appearance_event_id": "EVENT_003",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "무게중심을 조작한 주사위를 토템으로 사용",
+      "trait_type": "habit",
+      "source_text": "무게중심을 조작한 주사위.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "정밀함을 중시하나 상상력이 부족하다는 평",
+      "trait_type": "personality",
+      "source_text": "하지만 상상력이 눈곱만큼도 없잖아.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "역설 건축(펜로즈 계단) 활용에 능함",
+      "trait_type": "ability",
+      "source_text": "역설이지.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "colleague",
+      "description": "코브를 걱정하는 동료",
+      "sentiment": "positive",
+      "source_text": "코브... 너 괜찮아?",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_011",
+      "relationship_type": "colleague",
+      "description": "티격태격하는 동료",
+      "sentiment": "mixed",
+      "source_text": "구체성을 요구해서 미안하군, 임스.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_004",
+    "name": "맬",
+    "aliases": [
+     "코브 부인",
+     "엄마"
+    ],
+    "description": "코브의 사망한 아내. 림보 경험 후 세상이 꿈이라 믿고 투신했다. 코브의 무의식 속 투사체로 반복해서 나타나 작전을 방해한다.",
+    "first_appearance_event_id": "EVENT_007",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "우아하고 아름다운 여인",
+      "trait_type": "appearance",
+      "source_text": "우아한 옷차림의 아름다운 여인이 바다를 내려다보고 있다.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "실제로는 사망함",
+      "trait_type": "status",
+      "source_text": "맬은 죽었어, 아리아드네.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "투사체로서 코브를 림보에 붙잡아두려 함",
+      "trait_type": "status",
+      "source_text": "여기 머무르는 걸 선택해. 날 선택해.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "팽이 토템의 원래 주인",
+      "trait_type": "background",
+      "source_text": "이것도 맬의 물건이었죠.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "lover",
+      "description": "남편. 함께 늙어가자는 약속을 지키라고 요구",
+      "sentiment": "mixed",
+      "source_text": "함께 늙어가자고 네 입으로 말했잖아!",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_010",
+      "relationship_type": "enemy",
+      "description": "아리아드네에게 적대적",
+      "sentiment": "negative",
+      "source_text": "얼어붙듯 멈춰 서서 적대적인 눈빛으로 노려보는 맬.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_007",
+    "name": "제임스",
+    "aliases": [
+     "어린 금발 소년"
+    ],
+    "description": "코브의 아들. 기억과 꿈 속에서는 늘 등을 돌린 모습으로 나타난다.",
+    "first_appearance_event_id": "EVENT_020",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "세 살배기 금발 소년",
+      "trait_type": "appearance",
+      "source_text": "우리를 등진 세 살배기 금발 소년이 정원에 웅크리고 앉아",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "family",
+      "description": "아빠를 기다림",
+      "sentiment": "positive",
+      "source_text": "네. 집에 언제 와요?",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_008",
+    "name": "필리파",
+    "aliases": [
+     "어린 금발 소녀",
+     "어린 소녀"
+    ],
+    "description": "코브의 딸.",
+    "first_appearance_event_id": "EVENT_020",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "다섯 살배기 금발 소녀",
+      "trait_type": "appearance",
+      "source_text": "얼굴이 보이지 않는 다섯 살배기 금발 소녀가",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "family",
+      "description": "딸",
+      "sentiment": "positive",
+      "source_text": "할머니가 아빠는 영영 안 돌아올 거래요.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_009",
+    "name": "마일즈",
+    "aliases": [
+     "마일즈 교수",
+     "스티븐"
+    ],
+    "description": "파리 국립건축학교 교수. 맬의 아버지이자 코브의 스승. 아리아드네를 소개한다.",
+    "first_appearance_event_id": "EVENT_025",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "텁수룩한 교수, 연구실보다 강의실을 선호",
+      "trait_type": "habit",
+      "source_text": "연구실 싫어하시는 건 여전하시네요.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "드림 셰어 설계·항해를 가르친 인물",
+      "trait_type": "background",
+      "source_text": "다른 사람의 정신을 설계하고 항해하는 법을 가르쳐주셨죠.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "family",
+      "description": "사위이자 제자. 걱정과 원망이 섞임",
+      "sentiment": "mixed",
+      "source_text": "돌아가서 죗값을 치르게, 돔.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_016",
+      "relationship_type": "family",
+      "description": "20년을 함께 산 아내",
+      "sentiment": "neutral",
+      "source_text": "20년을 함께 사셨잖아요.",
+      "certainty": "inferred"
+     },
+     {
+      "target_character_id": "CHAR_010",
+      "relationship_type": "superior",
+      "description": "제자",
+      "sentiment": "positive",
+      "source_text": "자네보다 더 뛰어난 아이가 있네.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_010",
+    "name": "아리아드네",
+    "aliases": [],
+    "description": "마일즈 교수의 뛰어난 건축학도. 팀의 설계자가 되어 코브의 비밀을 알고 림보까지 동행한다.",
+    "first_appearance_event_id": "EVENT_026",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "빠른 학습력과 창의적 설계 능력",
+      "trait_type": "ability",
+      "source_text": "그렇게 빨리 감을 잡는 친구는 본 적이 없어.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "황동 체스 말을 토템으로 제작",
+      "trait_type": "habit",
+      "source_text": "토템을 손보고 있었어요.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "직설적이고 호기심이 강함",
+      "trait_type": "personality",
+      "source_text": "당신이 매일 밤 혼자서 무슨 '테스트'를 한다는 건지 알고 싶었어요.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "colleague",
+      "description": "코브를 돕고 감시하는 동료",
+      "sentiment": "positive",
+      "source_text": "혼자서 감당할 필요는 없어요.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_011",
+    "name": "임스",
+    "aliases": [
+     "브라우닝(임스)",
+     "금발 여인"
+    ],
+    "description": "몸바사에 머물던 위조꾼. 꿈속에서 브라우닝 등으로 변신하며 3단계 꿈의 꿈꾸는 자.",
+    "first_appearance_event_id": "EVENT_032",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "남루한 양복 차림의 40대 서양인",
+      "trait_type": "appearance",
+      "source_text": "남루한 양복 차림의 40대 서양인 남자가",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "위조와 변신에 능함",
+      "trait_type": "ability",
+      "source_text": "신원 위조라면 제 전문 분야죠, 사이토 씨.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "도박을 즐기고 능청스러움",
+      "trait_type": "personality",
+      "source_text": "주사위 도 박 테이블에 끼어 앉아 있다.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_003",
+      "relationship_type": "colleague",
+      "description": "아서와 티격태격",
+      "sentiment": "mixed",
+      "source_text": "그 꽉 막힌 샌님하고 아직도 같이 일해?",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_012",
+    "name": "유서프",
+    "aliases": [],
+    "description": "몸바사의 약사. 진정제를 조제하고 1단계 꿈의 꿈꾸는 자로서 승합차를 운전한다.",
+    "first_appearance_event_id": "EVENT_036",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "뚱뚱한 40대 남자",
+      "trait_type": "appearance",
+      "source_text": "뚱뚱한 40대 남자가 책상 뒤에서 일어나 손짓한다. 유서프다.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "자체 제조 솜나신 화합물",
+      "trait_type": "ability",
+      "source_text": "유서프 표 솜나신이지요.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_001",
+      "relationship_type": "colleague",
+      "description": "코브를 믿고 위험을 알면서 참여",
+      "sentiment": "positive",
+      "source_text": "난 코브를 믿었을 뿐입니다.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_013",
+    "name": "로버트 피셔",
+    "aliases": [
+     "피셔",
+     "로버트",
+     "피셔 주니어"
+    ],
+    "description": "에너지 대기업 피셔-모로우의 32세 후계자. 아버지와의 관계가 갈등으로 얼룩져 있으며 인셉션의 표적.",
+    "first_appearance_event_id": "EVENT_035",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "32세 후계자",
+      "trait_type": "background",
+      "source_text": "로버트 피셔, 32세.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "추출 방어 훈련을 받아 무의식이 군사화됨",
+      "trait_type": "ability",
+      "source_text": "무의식이 군사화되어 있었다고.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "11세에 어머니를 잃음",
+      "trait_type": "background",
+      "source_text": "난 고작 열한 살이었다고요, 피터 삼촌.",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_014",
+      "relationship_type": "family",
+      "description": "아버지. 인정받지 못했다고 느낌",
+      "sentiment": "mixed",
+      "source_text": "제가 알아들을 수 있었던 말은 딱 한 단어뿐이었어요.",
+      "certainty": "explicit"
+     },
+     {
+      "target_character_id": "CHAR_015",
+      "relationship_type": "family",
+      "description": "대부, 피터 삼촌",
+      "sentiment": "mixed",
+      "source_text": "지금은 안 돼요, 피터 삼촌.",
+      "certainty": "explicit"
+     }
+    ]
+   },
+   {
+    "character_id": "CHAR_014",
+    "name": "모리스 피셔",
+    "aliases": [
+     "아버지",
+     "모리스 회장"
+    ],
+    "description": "피셔-모로우 회장. 병상에 있다가 시드니에서 사망.",
+    "first_appearance_event_id": "EVENT_035",
+    "certainty": "explicit",
+    "traits": [
+     {
+      "trait": "중병으로 임시 병실에 누워 있음",
+      "trait_type": "status",
+      "source_text": "침대에 누운 아버지가 색색거리며 거친 숨을 몰아쉬고 있다.",
+      "certainty": "explicit"
+     },
+     {
+      "trait": "감정 표현에 서툼",
+      "trait_type": "personality",
+      "source_text": "그분은 감정을 표현하는 데 워낙 서투셨—",
+      "certainty": "explicit"
+     }
+    ],
+    "relationships": [
+     {
+      "target_character_id": "CHAR_013",
+      "relationship_type": "family",
+      "description": "아들",
+      "sentiment": "mixed",
+      "source_text": "로버트! 그 빌어먹을 방에 들이지 말라고",
+      "certainty": "explicit"
+     }
+    ]
+   }
+  ],
+  "events": [
+   {
+    "event_id": "EVENT_059",
+    "order": 1,
+    "title": "피셔가 브라우닝의 무의식이라 믿고 3단계 꿈에 스스로 들어간다",
+    "summary": "코브는 브라우닝의 무의식에 들어간다고 속여 피셔를 자발적으로 참여시키고, 아서만 남긴 채 팀이 3단계로 내려간다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_013",
+     "CHAR_003",
+     "CHAR_010",
+     "CHAR_011",
+     "CHAR_002"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_059",
+    "location_id": "LOCATION_059",
+    "cause": "피셔의 진실 탐구 욕구",
+    "result": "3단계 진입, 코브가 맬의 기척을 느낌",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "자신의 무의식을 털어내는 일에 스스로 앞장서게 만들다니.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_090",
+    "title": "피셔가 금고 번호를 528490이라고 말하고 아서가 그 숫자를 받아 적는다",
+    "summary": "피셔가 떠오르는 숫자를 하나씩 말하다 마지막을 0으로 끝내고, 아서는 메모에 528490이라 적어 넣는다.",
+    "participant_character_ids": [
+     "CHAR_013",
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_013",
+    "cause": "금고 번호 확인",
+    "result": "잘못된 숫자가 메모에 기록됨",
+    "source_text": "피셔가 떠오르는 숫자를 하나씩 말하다 마지막을 0으로 끝내고, 아서는 메모에 528490이라 적어 넣는다.",
+    "certainty": "explicit",
+    "order": 2
+   },
+   {
+    "event_id": "EVENT_060",
+    "order": 3,
+    "title": "설산에서 팀이 병원 요새 침투 역할을 나눈다",
+    "summary": "임스는 경비를 유인하고, 사이토가 피셔와 북쪽 타워로 침투하며, 코브와 아리아드네는 남쪽 타워에서 엄호하기로 한다. 사이토는 피를 토한다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_010",
+     "CHAR_011",
+     "CHAR_002",
+     "CHAR_013"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_060",
+    "location_id": "LOCATION_060",
+    "cause": "코브가 경로를 알면 맬이 알게 될 위험",
+    "result": "침투 개시",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "내가 하지.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_091",
+    "title": "진정제를 맞고 죽은 피셔가 림보가 아니라 현실 침대에서 깨어난다",
+    "summary": "강력한 진정제를 맞은 피셔가 3단계 설산에서 쓰러져 죽지만, 림보로 떨어지지 않고 바로 깨어나 호흡기를 떼어낸다.",
+    "participant_character_ids": [
+     "CHAR_014",
+     "CHAR_013"
+    ],
+    "main_actor_character_id": "CHAR_013",
+    "cause": "3단계 설산 전투에서 입은 상처",
+    "result": "피셔가 림보 없이 즉시 각성함",
+    "source_text": "강력한 진정제를 맞은 피셔가 3단계 설산에서 쓰러져 죽지만, 림보로 떨어지지 않고 바로 깨어나 호흡기를 떼어낸다.",
+    "certainty": "explicit",
+    "order": 4
+   },
+   {
+    "event_id": "EVENT_061",
+    "order": 5,
+    "title": "유서프가 추격전 속에서 예정보다 일찍 음악 신호를 보낸다",
+    "summary": "SUV와 오토바이의 공격을 받던 유서프가 다리에 도달해 아서에게 헤드폰을 씌우고 음악을 재생한다.",
+    "participant_character_ids": [
+     "CHAR_012",
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_012",
+    "time_id": "TIME_061",
+    "location_id": "LOCATION_061",
+    "cause": "피셔 투사체의 추격",
+    "result": "모든 단계에 음악 신호 전달",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "빌어먹을. 준비가 다 끝났어야 할 텐데.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_062",
+    "order": 6,
+    "title": "아서가 기울어지는 호텔에서 보안요원들과 싸우며 도주한다",
+    "summary": "승합차가 굴러 회전하는 복도에서 싸운 아서는 음악이 너무 이르다고 당황하고, 펜로즈 계단의 역설로 추격자를 떨어뜨린다.",
+    "participant_character_ids": [
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_003",
+    "time_id": "TIME_062",
+    "location_id": "LOCATION_062",
+    "cause": "1단계 승합차의 충격과 투사체의 추적",
+    "result": "4층으로 돌아감",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "역설이지.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_063",
+    "order": 7,
+    "title": "임스가 조명탄으로 경비 순찰대를 유인한다",
+    "summary": "임스가 조명탄을 쏘아 요새의 스키·스노모빌 순찰대를 끌어내고 숲으로 도주한다.",
+    "participant_character_ids": [
+     "CHAR_011"
+    ],
+    "main_actor_character_id": "CHAR_011",
+    "time_id": "TIME_063",
+    "location_id": "LOCATION_063",
+    "cause": "침투조를 위한 경비 분산",
+    "result": "순찰대가 임스를 추격",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "배낭에서 조명탄을 꺼내 쏘아 올린다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_064",
+    "order": 8,
+    "title": "시간이 부족해 공조 덕트를 통한 직통 경로로 변경한다",
+    "summary": "음악을 들은 코브가 남은 시간 60분을 계산하고, 아리아드네는 임스가 추가한 환기 덕트로 상층까지 직행할 수 있다고 알린다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_010",
+     "CHAR_011",
+     "CHAR_002",
+     "CHAR_013"
+    ],
+    "main_actor_character_id": "CHAR_010",
+    "time_id": "TIME_064",
+    "location_id": "LOCATION_064",
+    "cause": "조기 음악 신호",
+    "result": "사이토와 피셔가 덕트 경로로 이동",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "외벽 에서 상층 타워까지 단숨에 직행할 수 있어요.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_065",
+    "order": 9,
+    "title": "승합차 추락으로 첫 킥이 발생하지만 팀은 놓친다",
+    "summary": "승합차가 다리 난간을 뚫고 떨어지자 2단계는 무중력, 3단계는 눈사태가 일어난다. 사이토는 피셔와 함께 로프를 끊어 눈사태를 피한다. 다음 킥은 수면 충돌 때다.",
+    "participant_character_ids": [
+     "CHAR_012",
+     "CHAR_003",
+     "CHAR_001",
+     "CHAR_011",
+     "CHAR_002",
+     "CHAR_013",
+     "CHAR_010"
+    ],
+    "main_actor_character_id": "CHAR_012",
+    "time_id": "TIME_065",
+    "location_id": "LOCATION_065",
+    "cause": "음악 신호와 다른 타이밍의 킥",
+    "result": "아서에게 2~3분, 3단계에 약 20분 남음",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "승합차가 수면에 충돌할 때다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_066",
+    "order": 10,
+    "title": "아서가 무중력 상태에서 새로운 킥을 고안한다",
+    "summary": "떨어뜨릴 하중이 사라지자 아서는 폭약을 회수하고, 잠든 팀원들을 시트로 묶어 엘리베이터에 넣은 뒤 엘리베이터를 폭약으로 쏘아 올릴 준비를 한다.",
+    "participant_character_ids": [
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_003",
+    "time_id": "TIME_066",
+    "location_id": "LOCATION_066",
+    "cause": "자유낙하로 인한 무중력",
+    "result": "엘리베이터 킥 준비",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "대체 어떻게 너희를 떨어뜨려야 하는 거야?",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_067",
+    "order": 11,
+    "title": "코브가 남쪽 타워에서 저격으로 대기실 경비를 제거한다",
+    "summary": "사이토는 덕트에서 피를 토하며 뒤처지고, 코브는 대기실 경비를 저격하지만 금고실엔 창문이 없다. 순찰대가 요새로 되돌아온다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_010",
+     "CHAR_002",
+     "CHAR_013",
+     "CHAR_011"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_067",
+    "location_id": "LOCATION_067",
+    "cause": "피셔의 금고실 진입 엄호",
+    "result": "피셔가 대기실 진입",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "코브는 저격총으로 그들을 담담하게 하나씩 저격해 쓰러뜨린다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_068",
+    "order": 12,
+    "title": "맬이 피셔를 쏘고 코브는 뒤늦게 맬을 쏜다",
+    "summary": "조준경 속 맬을 본 코브가 망설이는 사이 맬이 피셔를 사살하고, 코브가 반사적으로 맬을 쏜다. 피셔의 정신은 림보로 떨어진다.",
+    "participant_character_ids": [
+     "CHAR_004",
+     "CHAR_013",
+     "CHAR_001",
+     "CHAR_010"
+    ],
+    "main_actor_character_id": "CHAR_004",
+    "time_id": "TIME_068",
+    "location_id": "LOCATION_068",
+    "cause": "코브의 무의식 속 맬과 코브의 망설임",
+    "result": "작전 실패 위기",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "맬이 피셔 를 쏜다",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_069",
+    "order": 13,
+    "title": "아리아드네의 제안으로 코브와 아리아드네가 림보로 피셔를 쫓아간다",
+    "summary": "아리아드네는 림보에서 피셔를 찾아 조기 킥을 주고, 임스가 제세동기로 피셔를 소생시켜 금고실로 보내자는 계획을 세운다. 코브와 아리아드네가 림보로 내려간다.",
+    "participant_character_ids": [
+     "CHAR_010",
+     "CHAR_001",
+     "CHAR_011"
+    ],
+    "main_actor_character_id": "CHAR_010",
+    "time_id": "TIME_069",
+    "location_id": "LOCATION_069",
+    "cause": "피셔의 정신이 림보로 떨어짐",
+    "result": "림보 진입",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "아직 방법이 있어요: 피셔를 따라 내려가는 거예요—",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_070",
+    "order": 14,
+    "title": "코브와 아리아드네가 무너지는 림보 도시를 지나 맬의 집으로 향한다",
+    "summary": "코브는 맬과 함께 지은 도시와 기억으로 재건한 동네를 보여주고, 생각은 바이러스와 같다며 펜트하우스로 들어간다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_010",
+     "CHAR_007",
+     "CHAR_008"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_070",
+    "location_id": "LOCATION_070",
+    "cause": "피셔와 맬을 찾기 위함",
+    "result": "펜트하우스에서 맬과 대면",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "몇 년 동안 끊임없이 지었어.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_071",
+    "order": 15,
+    "title": "맬이 코브에게 림보에 남으라고 하고 코브는 자신이 맬에게 인셉션했음을 고백한다",
+    "summary": "맬은 코브의 현실도 의심스럽다며 자신을 선택하라 하지만, 코브는 아이들을 택하고 맬의 의심이 자신이 심은 생각이었다고 고백한다.",
+    "participant_character_ids": [
+     "CHAR_004",
+     "CHAR_001",
+     "CHAR_010",
+     "CHAR_007",
+     "CHAR_008"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_071",
+    "location_id": "LOCATION_071",
+    "cause": "코브의 죄책감 직면",
+    "result": "맬이 코브가 자신을 죽였다고 비난하며 남으라 요구",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "내 아내에게 직접 인셉션을 감행했고, 그 끔찍한 대가를 치렀으니까...",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_072",
+    "order": 16,
+    "title": "(회상) 코브가 림보에서 맬의 금고에 생각을 심고 함께 기찻길에 눕는다",
+    "summary": "코브는 맬의 어린 시절 집 금고를 열어 팽이를 돌려 '세상이 진짜가 아니다'라는 생각을 심고, 두 사람은 기차에 치여 림보를 탈출한다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_004"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_072",
+    "location_id": "LOCATION_072",
+    "cause": "림보 탈출 필요",
+    "result": "현실 복귀 후에도 생각이 맬을 잠식",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "아내의 무의식 가장 깊은 곳으로 침투해 가장 단순하고 작은 생각 하나를 심어 넣었지.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_073",
+    "order": 17,
+    "title": "아서가 엘리베이터에서 음악을 재생한다",
+    "summary": "아서가 잠든 임스에게 헤드폰을 씌우고 음악을 틀어 3단계에 킥 신호를 보낸다.",
+    "participant_character_ids": [
+     "CHAR_003",
+     "CHAR_011"
+    ],
+    "main_actor_character_id": "CHAR_003",
+    "time_id": "TIME_073",
+    "location_id": "LOCATION_073",
+    "cause": "다음 킥 타이밍",
+    "result": "임스가 음악을 감지",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "아서가 음악 플레이어의 재생 버튼을 누른다",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_074",
+    "order": 18,
+    "title": "사이토가 경비병을 쏜 뒤 숨을 거두고 임스가 피셔를 소생시킨다",
+    "summary": "임스에게 엄호를 맡은 사이토가 덕트로 오는 경비병을 쏘고 사망하며, 임스는 음악을 듣고 제세동기로 피셔에게 충격을 가한다.",
+    "participant_character_ids": [
+     "CHAR_002",
+     "CHAR_011",
+     "CHAR_013"
+    ],
+    "main_actor_character_id": "CHAR_002",
+    "time_id": "TIME_074",
+    "location_id": "LOCATION_074",
+    "cause": "총상 악화",
+    "result": "사이토가 림보로 떨어짐",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "사이토가 숨을 거둔다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_075",
+    "order": 19,
+    "title": "맬이 코브를 찌르고 아리아드네가 맬을 쏜 뒤 피셔를 떨어뜨려 귀환시킨다",
+    "summary": "코브는 사이토를 찾기 위해 남겠다고 하고 맬을 가짜라 거부한다. 맬이 코브를 찌르자 아리아드네가 맬을 쏘고 피셔를 옥상 밖으로 차 떨어뜨린다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_004",
+     "CHAR_010",
+     "CHAR_013"
+    ],
+    "main_actor_character_id": "CHAR_010",
+    "time_id": "TIME_075",
+    "location_id": "LOCATION_075",
+    "cause": "임스의 제세동 신호(번개)",
+    "result": "피셔가 3단계로 복귀",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "임기응변이요.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_076",
+    "order": 20,
+    "title": "피셔가 금고실에서 죽어가는 아버지의 진심을 듣는다",
+    "summary": "금고실의 아버지가 '네가 날 흉내 내려 애쓴 것에 실망했다'고 말한다.",
+    "participant_character_ids": [
+     "CHAR_013",
+     "CHAR_014",
+     "CHAR_011"
+    ],
+    "main_actor_character_id": "CHAR_014",
+    "time_id": "TIME_076",
+    "location_id": "LOCATION_076",
+    "cause": "인셉션 감정 기폭 장치",
+    "result": "피셔의 감정적 전환",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "네가... 날 흉내 내려고 애썼다는 사실에... 실망했다는 게다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_077",
+    "order": 21,
+    "title": "피셔가 금고에서 유언장과 바람개비를 발견하고 동시 킥이 실행된다",
+    "summary": "아서가 엘리베이터를 폭파해 쏘아 올리고, 피셔는 528491로 금고를 열어 유언장과 어린 시절 바람개비를 꺼낸다. 아버지는 숨지고 임스가 병원을 폭파한다.",
+    "participant_character_ids": [
+     "CHAR_013",
+     "CHAR_014",
+     "CHAR_011",
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_013",
+    "time_id": "TIME_077",
+    "location_id": "LOCATION_077",
+    "cause": "킥 타이밍 도달",
+    "result": "인셉션 완료, 층위 관통 킥",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "아들이 키패드에 5, 2, 8, 4, 9, 1을 입력한다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_078",
+    "order": 22,
+    "title": "코브가 맬을 놓아주고 아리아드네가 킥을 타고 돌아간다",
+    "summary": "아리아드네는 사이토를 꼭 데려오라며 떨어지고, 코브는 함께 늙어갔던 기억을 인정하며 맬과 작별한다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_004",
+     "CHAR_010"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_078",
+    "location_id": "LOCATION_078",
+    "cause": "죄책감과의 직면",
+    "result": "맬 투사체 소멸, 코브 림보 잔류",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "이제 난 널 놓 아주어야 해...",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_079",
+    "order": 23,
+    "title": "승합차가 강에 추락하고 피셔가 브라우닝(임스)을 구해낸다",
+    "summary": "깨어난 피셔가 물에 잠긴 승합차에서 브라우닝을 끌어내 헤엄치고, 팀원들은 호흡기로 버티다 사이토와 코브의 이상을 확인한다.",
+    "participant_character_ids": [
+     "CHAR_013",
+     "CHAR_011",
+     "CHAR_010",
+     "CHAR_003",
+     "CHAR_012",
+     "CHAR_002",
+     "CHAR_001"
+    ],
+    "main_actor_character_id": "CHAR_013",
+    "time_id": "TIME_079",
+    "location_id": "LOCATION_079",
+    "cause": "수면 충돌 킥",
+    "result": "1단계 귀환",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "멈 춰 서서 되돌아가 브라우닝의 벨트를 풀고 그를 밖으로 끌어낸다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_092",
+    "title": "코브의 팽이가 아파트 바닥에서 쓰러지지 않고 계속 돈다",
+    "summary": "깨어난 코브가 식탁 위 팽이를 돌려 보는데 한참을 돌고도 쓰러지지 않아 그는 현실 여부를 확신하지 못한다.",
+    "participant_character_ids": [
+     "CHAR_001"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "cause": "현실 확인 시도",
+    "result": "현실 여부 불확실",
+    "source_text": "깨어난 코브가 식탁 위 팽이를 돌려 보는데 한참을 돌고도 쓰러지지 않아 그는 현실 여부를 확신하지 못한다.",
+    "certainty": "explicit",
+    "order": 24
+   },
+   {
+    "event_id": "EVENT_080",
+    "order": 25,
+    "title": "피셔가 아버지의 뜻대로 자신의 삶을 살겠다고 다짐한다",
+    "summary": "강변에서 피셔는 유언장이 아버지를 흉내 내지 말라는 뜻이었다며 그렇게 하겠다고 브라우닝(임스)에게 말한다.",
+    "participant_character_ids": [
+     "CHAR_013",
+     "CHAR_011"
+    ],
+    "main_actor_character_id": "CHAR_013",
+    "time_id": "TIME_080",
+    "location_id": "LOCATION_080",
+    "cause": "심어진 생각",
+    "result": "인셉션 성공 확인",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "그렇게 할 생각입니다, 피터 삼촌.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_081",
+    "order": 26,
+    "title": "아리아드네가 아서에게 코브가 사이토를 찾으러 남았다고 알린다",
+    "summary": "아서는 코브가 림보에서 길을 잃을 것을 걱정하지만 아리아드네는 무사할 거라고 믿는다.",
+    "participant_character_ids": [
+     "CHAR_010",
+     "CHAR_003"
+    ],
+    "main_actor_character_id": "CHAR_010",
+    "time_id": "TIME_081",
+    "location_id": "LOCATION_081",
+    "cause": "코브의 림보 잔류",
+    "result": "코브의 귀환 대기",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "아뇨. 사이토를 찾으려고요.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_082",
+    "order": 27,
+    "title": "늙은 코브가 림보에서 노년의 사이토를 찾아 귀환을 설득한다",
+    "summary": "해변에 떠밀려 온 코브가 90세가 된 사이토와 마주하고, 팽이로 이곳이 진짜가 아님을 상기시키며 믿음의 도약을 권하자 사이토가 고개를 끄덕인다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_002"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_082",
+    "location_id": "LOCATION_082",
+    "cause": "사이토를 구하겠다는 약속",
+    "result": "두 사람이 림보 탈출을 결심",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "돌아가서 다시 함께 젊은이가 됩시다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_083",
+    "order": 28,
+    "title": "코브가 747 기내에서 깨어나고 사이토가 약속대로 전화를 건다",
+    "summary": "LA 착륙 20분 전 코브가 깨어나고, 사이토는 기내 전화로 번호를 누른다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_010",
+     "CHAR_002"
+    ],
+    "main_actor_character_id": "CHAR_002",
+    "time_id": "TIME_083",
+    "location_id": "LOCATION_083",
+    "cause": "림보 탈출",
+    "result": "코브의 입국 문제 해결",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "사이 토가 기내 전화를 들어 번호를 누른다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_084",
+    "order": 29,
+    "title": "코브가 입국 심사를 통과하고 팀과 무언의 작별을 한다",
+    "summary": "입국 도장을 받은 코브가 팀원들과 눈인사를 나누고, 피셔는 그를 알아볼 듯 지나친다. 마일즈가 마중 나와 있다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_010",
+     "CHAR_011",
+     "CHAR_012",
+     "CHAR_003",
+     "CHAR_013",
+     "CHAR_009"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_084",
+    "location_id": "LOCATION_084",
+    "cause": "사이토의 전화 한 통",
+    "result": "코브 귀국",
+    "response": 1,
+    "continuation": 1,
+    "source_text": "쾅! 여권에 입국 도장을 찍는다.",
+    "certainty": "explicit"
+   },
+   {
+    "event_id": "EVENT_093",
+    "title": "LAX 입국 심사대에서 코브가 혐의로 체포되어 연행된다",
+    "summary": "여권을 내민 코브에게 심사관이 수배 기록을 확인하고 경관을 부르며, 코브는 사이토에게서 아무 연락도 없었다는 말을 들으며 수갑을 찬 채 연행된다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_002"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "cause": "혐의가 해소되지 않음",
+    "result": "코브 체포, 귀국 실패",
+    "source_text": "여권을 내민 코브에게 심사관이 수배 기록을 확인하고 경관을 부르며, 코브는 사이토에게서 아무 연락도 없었다는 말을 들으며 수갑을 찬 채 연행된다.",
+    "certainty": "explicit",
+    "order": 30
+   },
+   {
+    "event_id": "EVENT_085",
+    "order": 31,
+    "title": "코브가 집으로 돌아와 아이들의 얼굴을 본다",
+    "summary": "코브가 식탁에서 팽이를 돌리고, 아이들이 돌아보며 아빠에게 달려온다. 식탁 위의 팽이는 여전히 돌고 있다.",
+    "participant_character_ids": [
+     "CHAR_001",
+     "CHAR_009",
+     "CHAR_007",
+     "CHAR_008"
+    ],
+    "main_actor_character_id": "CHAR_001",
+    "time_id": "TIME_085",
+    "location_id": "LOCATION_085",
+    "cause": "인셉션 완수와 귀국",
+    "result": "가족 재회, 팽이 결과는 미확인",
+    "response": 1,
+    "continuation": 0.5,
+    "source_text": "그의 뒤편, 식탁 위에서 팽이가 여전히 돌고 있다.",
+    "certainty": "explicit"
+   }
+  ],
+  "times": [
+   {
+    "time_id": "TIME_059",
+    "event_id": "EVENT_059",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "팀원들이 하나둘씩 잠에 빠져든다.",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_060",
+    "event_id": "EVENT_060",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "야외. 눈 덮인 설산 - 낮",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_061",
+    "event_id": "EVENT_061",
+    "time_info": [
+     0,
+     2
+    ],
+    "offset": 1,
+    "timeline_type": "parallel",
+    "source_text": "실내/야외. 비 내리는 도심 거리를 달리는 승합차 - 낮",
+    "expression": "[병행] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_062",
+    "event_id": "EVENT_062",
+    "time_info": [
+     0,
+     2
+    ],
+    "offset": 1,
+    "timeline_type": "parallel",
+    "source_text": "실내. 호텔 비상계단 - 밤",
+    "expression": "[병행] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_063",
+    "event_id": "EVENT_063",
+    "time_info": [
+     0,
+     2
+    ],
+    "offset": 1,
+    "timeline_type": "parallel",
+    "source_text": "20분 전부터 감지했어요",
+    "expression": "[병행] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_064",
+    "event_id": "EVENT_064",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "유서프가 뛰어내리기까지 약 10초, 그럼 아서에겐 대략 3분, 우리에겐— 60분.",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_065",
+    "event_id": "EVENT_065",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "아서에게는 2~3분, 우리에게는 약 20분이 남아 있어.",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_066",
+    "event_id": "EVENT_066",
+    "time_info": [
+     0,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "parallel",
+    "source_text": "실내. 호텔 복도 - 밤",
+    "expression": "[병행] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_067",
+    "event_id": "EVENT_067",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내. 병원 복합시설 남쪽 타워 최상층 - 이어짐",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_068",
+    "event_id": "EVENT_068",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "이미 늦었다— 맬이 피셔 를 쏜다",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_069",
+    "event_id": "EVENT_069",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "저 아래에선 시간이 충분해요.",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_070",
+    "event_id": "EVENT_070",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "야외. 해안가 (림보) - 낮",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_071",
+    "event_id": "EVENT_071",
+    "time_info": [
+     2,
+     2
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내. 펜트하우스 (림보) - 낮",
+    "expression": "직전 사건보다 수십 분~수 시간 후"
+   },
+   {
+    "time_id": "TIME_072",
+    "event_id": "EVENT_072",
+    "time_info": [
+     7,
+     1
+    ],
+    "offset": 0,
+    "timeline_type": "flashback",
+    "source_text": "수년 전 맬이 자신의 기억을 봉인해 둔 그 비밀스러운 장소를 찾아냈을 때",
+    "expression": "[회상] 직전 사건보다 수년 전"
+   },
+   {
+    "time_id": "TIME_073",
+    "event_id": "EVENT_073",
+    "time_info": [
+     0,
+     2
+    ],
+    "offset": 1,
+    "timeline_type": "parallel",
+    "source_text": "실내. 엘리베이터 - 밤",
+    "expression": "[병행] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_074",
+    "event_id": "EVENT_074",
+    "time_info": [
+     0,
+     2
+    ],
+    "offset": 1,
+    "timeline_type": "parallel",
+    "source_text": "실내. 병원 복합시설 공조 덕트 - 이어짐",
+    "expression": "[병행] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_075",
+    "event_id": "EVENT_075",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "야외. 펜트하우스 테라스 (림보) - 낮",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_076",
+    "event_id": "EVENT_076",
+    "time_info": [
+     0,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "parallel",
+    "source_text": "실내. 금고실 - 이어짐",
+    "expression": "[병행] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_077",
+    "event_id": "EVENT_077",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내. 금고실 - 낮",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_078",
+    "event_id": "EVENT_078",
+    "time_info": [
+     0,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "parallel",
+    "source_text": "야외. 펜트하우스 (림보) - 낮",
+    "expression": "[병행] 직전 사건과 같은 시점"
+   },
+   {
+    "time_id": "TIME_079",
+    "event_id": "EVENT_079",
+    "time_info": [
+     1,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내/야외. 강물로 추락하는 승합차 - 낮",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_080",
+    "event_id": "EVENT_080",
+    "time_info": [
+     1,
+     0
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "야외. 강변 - 잠시 후",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_081",
+    "event_id": "EVENT_081",
+    "time_info": [
+     1,
+     0
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "야외. 빗속 다리 밑 - 잠시 후",
+    "expression": "직전 사건보다 수초~수분 후"
+   },
+   {
+    "time_id": "TIME_082",
+    "event_id": "EVENT_082",
+    "time_info": [
+     7,
+     2
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "더 늙고, 지치고, 세 월의 풍파를 겪은 모습...",
+    "expression": "직전 사건보다 수년 후"
+   },
+   {
+    "time_id": "TIME_083",
+    "event_id": "EVENT_083",
+    "time_info": [
+     9,
+     3
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "약 20분 뒤 로스앤젤레스에 착륙합니다.",
+    "expression": "시점 불명"
+   },
+   {
+    "time_id": "TIME_084",
+    "event_id": "EVENT_084",
+    "time_info": [
+     2,
+     1
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내. LAX 입국장 - 잠시 후",
+    "expression": "직전 사건보다 수십 분~수 시간 후"
+   },
+   {
+    "time_id": "TIME_085",
+    "event_id": "EVENT_085",
+    "time_info": [
+     2,
+     2
+    ],
+    "offset": 1,
+    "timeline_type": "main",
+    "source_text": "실내. 코브와 맬의 집 주방 - 낮",
+    "expression": "직전 사건보다 수십 분~수 시간 후"
+   }
+  ],
+  "locations": [
+   {
+    "location_id": "LOCATION_059",
+    "event_id": "EVENT_059",
+    "name": "2단계 꿈: 호텔 528호",
+    "description": "3단계 진입 장소",
+    "location_info": [
+     8,
+     6,
+     3,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "팀원들 이 서로에게 튜브를 연결한다"
+   },
+   {
+    "location_id": "LOCATION_060",
+    "event_id": "EVENT_060",
+    "name": "3단계 꿈: 눈 덮인 설산(임스의 꿈)",
+    "description": "1.6킬로미터 아래 요새화된 병원이 보이는 절벽",
+    "location_info": [
+     8,
+     7,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "1.6킬로미터 아래에 자리한 거대한 요새화된 의료 시설."
+   },
+   {
+    "location_id": "LOCATION_061",
+    "event_id": "EVENT_061",
+    "name": "1단계 꿈: 도심 거리·재래시장·개폐식 다리",
+    "description": "추격전이 벌어진 경로",
+    "location_info": [
+     8,
+     5,
+     3,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내/야외. 서서히 올라가는 다리 위의 승합차 - 낮"
+   },
+   {
+    "location_id": "LOCATION_062",
+    "event_id": "EVENT_062",
+    "name": "2단계 꿈: 호텔 복도·비상계단",
+    "description": "회전하는 복도와 역설 계단",
+    "location_info": [
+     8,
+     6,
+     5,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 호텔 비상계단 - 이어짐"
+   },
+   {
+    "location_id": "LOCATION_063",
+    "event_id": "EVENT_063",
+    "name": "3단계 꿈: 설산 숲",
+    "description": "요새가 내려다보이는 숲",
+    "location_info": [
+     8,
+     7,
+     4,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "야외. 숲, 눈 덮인 설산 - 이어짐"
+   },
+   {
+    "location_id": "LOCATION_064",
+    "event_id": "EVENT_064",
+    "name": "3단계 꿈: 설산 및 복합시설 뒤편 절벽",
+    "description": "경로 변경을 논의한 위치",
+    "location_info": [
+     8,
+     7,
+     1,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "야외. 복합시설 뒤편 절벽 - 이어짐"
+   },
+   {
+    "location_id": "LOCATION_065",
+    "event_id": "EVENT_065",
+    "name": "1단계 다리 / 2단계 호텔 복도 / 3단계 설산",
+    "description": "킥이 동시에 전달된 세 층위",
+    "location_info": [
+     8,
+     5,
+     3,
+     1
+    ],
+    "relation": "FAR",
+    "source_text": "콘크리트 방호벽을 뚫고 부수며 돌진하는 승합차"
+   },
+   {
+    "location_id": "LOCATION_066",
+    "event_id": "EVENT_066",
+    "name": "2단계 꿈: 무중력 호텔 복도·528호·엘리베이터",
+    "description": "중력이 사라진 호텔",
+    "location_info": [
+     8,
+     6,
+     3,
+     1
+    ],
+    "relation": "FAR",
+    "source_text": "착지하지 못한 채 복도 허공을 둥둥 떠다니는 아서— 중력이 사라졌다..."
+   },
+   {
+    "location_id": "LOCATION_067",
+    "event_id": "EVENT_067",
+    "name": "3단계 꿈: 병원 복합시설 남쪽 타워 최상층",
+    "description": "대기실이 보이는 저격 위치",
+    "location_info": [
+     8,
+     7,
+     3,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 병원 복합시설 남쪽 타워 최상층 - 이어짐"
+   },
+   {
+    "location_id": "LOCATION_068",
+    "event_id": "EVENT_068",
+    "name": "3단계 꿈: 금고실 앞 대기실",
+    "description": "맬이 피셔를 쏜 장소",
+    "location_info": [
+     8,
+     7,
+     2,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 대기실 - 이어짐"
+   },
+   {
+    "location_id": "LOCATION_069",
+    "event_id": "EVENT_069",
+    "name": "3단계 꿈: 대기실",
+    "description": "림보 진입 장소",
+    "location_info": [
+     8,
+     7,
+     2,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 병원 복합시설 대기실 - 낮"
+   },
+   {
+    "location_id": "LOCATION_070",
+    "event_id": "EVENT_070",
+    "name": "림보 해안가와 코브·맬의 도시",
+    "description": "무너져 내리는 빌딩 숲과 기억으로 재건한 동네",
+    "location_info": [
+     4,
+     1,
+     1,
+     2
+    ],
+    "relation": "UNKNOWN",
+    "source_text": "야외. 해안가 (림보) - 낮"
+   },
+   {
+    "location_id": "LOCATION_071",
+    "event_id": "EVENT_071",
+    "name": "림보 초고층 빌딩 펜트하우스",
+    "description": "크래프트맨 양식 주택 내부를 가진 펜트하우스",
+    "location_info": [
+     4,
+     1,
+     2,
+     2
+    ],
+    "relation": "UNKNOWN",
+    "source_text": "실내. 펜트하우스 (림보) - 이어짐"
+   },
+   {
+    "location_id": "LOCATION_072",
+    "event_id": "EVENT_072",
+    "name": "림보 속 맬의 어린 시절 집과 황무지 철길",
+    "description": "인셉션 장소와 탈출용 철길",
+    "location_info": [
+     4,
+     1,
+     3,
+     1
+    ],
+    "relation": "UNKNOWN",
+    "source_text": "황무지를 가로지르는 철길에 도착한 코브와 맬."
+   },
+   {
+    "location_id": "LOCATION_073",
+    "event_id": "EVENT_073",
+    "name": "2단계 꿈: 호텔 엘리베이터",
+    "description": "폭약이 설치된 엘리베이터 카",
+    "location_info": [
+     8,
+     6,
+     3,
+     2
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 엘리베이터 - 밤"
+   },
+   {
+    "location_id": "LOCATION_074",
+    "event_id": "EVENT_074",
+    "name": "3단계 꿈: 공조 덕트 및 대기실",
+    "description": "사이토가 숨진 덕트",
+    "location_info": [
+     8,
+     7,
+     2,
+     1
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 병원 복합시설 공조 덕트 - 이어짐"
+   },
+   {
+    "location_id": "LOCATION_075",
+    "event_id": "EVENT_075",
+    "name": "림보 펜트하우스 테라스",
+    "description": "거대한 도시 상공이 내려다보이는 테라스",
+    "location_info": [
+     4,
+     1,
+     2,
+     1
+    ],
+    "relation": "UNKNOWN",
+    "source_text": "야외. 펜트하우스 테라스 (림보) - 낮"
+   },
+   {
+    "location_id": "LOCATION_076",
+    "event_id": "EVENT_076",
+    "name": "3단계 꿈: 금고실",
+    "description": "침대가 놓인 새하얀 방",
+    "location_info": [
+     8,
+     7,
+     2,
+     2
+    ],
+    "relation": "FAR",
+    "source_text": "적막이 감도는 새하얀 방으로 걸어 들어가는 피셔."
+   },
+   {
+    "location_id": "LOCATION_077",
+    "event_id": "EVENT_077",
+    "name": "3단계 금고실 / 2단계 엘리베이터 통로",
+    "description": "금고와 폭발하는 엘리베이터 통로",
+    "location_info": [
+     8,
+     7,
+     2,
+     2
+    ],
+    "relation": "FAR",
+    "source_text": "금고 안에는 유언장이 들 어 있다."
+   },
+   {
+    "location_id": "LOCATION_078",
+    "event_id": "EVENT_078",
+    "name": "림보 펜트하우스",
+    "description": "코브와 맬의 작별 장소",
+    "location_info": [
+     4,
+     1,
+     2,
+     1
+    ],
+    "relation": "UNKNOWN",
+    "source_text": "야외. 펜트하우스 (림보) - 낮"
+   },
+   {
+    "location_id": "LOCATION_079",
+    "event_id": "EVENT_079",
+    "name": "1단계 꿈: 강물 속 승합차",
+    "description": "다리 아래 강",
+    "location_info": [
+     8,
+     5,
+     3,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내/야외. 강물로 추락하는 승합차 - 낮"
+   },
+   {
+    "location_id": "LOCATION_080",
+    "event_id": "EVENT_080",
+    "name": "1단계 꿈: 강변",
+    "description": "비 내리는 강변",
+    "location_info": [
+     8,
+     5,
+     3,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "야외. 강변 - 잠시 후"
+   },
+   {
+    "location_id": "LOCATION_081",
+    "event_id": "EVENT_081",
+    "name": "1단계 꿈: 빗속 다리 밑",
+    "description": "다리 아래 강변",
+    "location_info": [
+     8,
+     5,
+     3,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "야외. 빗속 다리 밑 - 잠시 후"
+   },
+   {
+    "location_id": "LOCATION_082",
+    "event_id": "EVENT_082",
+    "name": "림보 해변 및 일본식 성곽 식당",
+    "description": "작품 첫 장면과 동일한 장소",
+    "location_info": [
+     3,
+     1,
+     0,
+     0
+    ],
+    "relation": "NEAR",
+    "source_text": "실내. 성곽 식당 - 낮"
+   },
+   {
+    "location_id": "LOCATION_083",
+    "event_id": "EVENT_083",
+    "name": "747 일등석 기내",
+    "description": "LA 착륙 직전의 기내",
+    "location_info": [
+     8,
+     3,
+     8,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 747 일등석 기내 - 낮"
+   },
+   {
+    "location_id": "LOCATION_084",
+    "event_id": "EVENT_084",
+    "name": "LAX 입국장",
+    "description": "로스앤젤레스 국제공항 입국 심사대와 수하물 구역",
+    "location_info": [
+     8,
+     3,
+     10,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. LAX 입국장 - 잠시 후"
+   },
+   {
+    "location_id": "LOCATION_085",
+    "event_id": "EVENT_085",
+    "name": "코브와 맬의 집 주방",
+    "description": "정원이 내다보이는 주방",
+    "location_info": [
+     8,
+     3,
+     9,
+     0
+    ],
+    "relation": "FAR",
+    "source_text": "실내. 코브와 맬의 집 주방 - 낮"
+   }
+  ]
+ },
+ "contradictions": [
+  {
+   "span": {
+    "start": 64,
+    "end": 123,
+    "quote": "피셔가 떠오르는 숫자를 하나씩 말하다 마지막을 0으로 끝내고, 아서는 메모에 528490이라 적어 넣는다."
+   },
+   "conflict_ref": {
+    "chapter_no": 2,
+    "quote": "브라우닝은 금고에 회사를 분할하는 대체 유언장이 있다고 말하고, 코브의 위협에 피셔는 떠오르는 숫자 5, 2, 8, 4, 9, 1을 댄다."
+   },
+   "type": "event",
+   "explanation": "숫자 충돌. EVENT_053에서 피셔가 떠오르는 숫자 5, 2, 8, 4, 9, 1을 댔고, EVENT_057도 이 숫자를 528호로 해석한다. 신규 사건은 같은 숫자가 528490으로 메모에 적혔다고 쓰여 마지막 자리가 맞지 않는다.\n근거: EVENT_053: 피셔가 떠오르는 숫자 5, 2, 8, 4, 9, 1을 댄다 (528491) / EVENT_057: 피셔의 숫자를 객실 번호로 해석하여 528호를 찾아낸다 / EVENT_090: 피셔가 마지막을 0으로 끝내고, 아서는 메모에 528490이라 적는다",
+   "confidence": 0.9
+  },
+  {
+   "span": {
+    "start": 203,
+    "end": 266,
+    "quote": "강력한 진정제를 맞은 피셔가 3단계 설산에서 쓰러져 죽지만, 림보로 떨어지지 않고 바로 깨어나 호흡기를 떼어낸다."
+   },
+   "conflict_ref": {
+    "chapter_no": 2,
+    "quote": "강력한 진정제 때문에 죽으면 깨어나지 못하고 림보로 떨어진다는 사실에 팀원들이 분노하지만, 코브는 내려가는 것만이 유일한 길이라고 설득한다."
+   },
+   "type": "setting",
+   "explanation": "세계관 규칙 RULE_011(강력한 진정제 상태에서 꿈속 사망 시 림보로 떨어짐)과 충돌. 신규 사건은 진정제를 맞은 피셔가 죽어도 림보 없이 바로 각성한다고 쓰였다. EVENT_047에서도 같은 규칙이 확인된다(깨어나지 못하고 림보로 떨어짐).\n근거: RULE_011: 강력한 진정제를 쓴 상태에서 꿈속에서 죽으면 림보로 떨어진다 / EVENT_047: 강력한 진정제 때문에 죽으면 깨어나지 못하고 림보로 떨어진다 / EVENT_091: 진정제를 맞은 피셔가 설산에서 죽지만 림보로 떨어지지 않고 바로 깨어난다",
+   "confidence": 0.9
+  },
+  {
+   "span": {
+    "start": 1566,
+    "end": 1625,
+    "quote": "깨어난 코브가 식탁 위 팽이를 돌려 보는데 한참을 돌고도 쓰러지지 않아 그는 현실 여부를 확신하지 못한다."
+   },
+   "conflict_ref": {
+    "chapter_no": 1,
+    "quote": "도쿄 아파트에서 팽이가 쓰러지는 것을 확인한 코브는 아이들의 전화를 받지만 언제 돌아올지 답하지 못하고, 엄마는 떠났다고 말한다."
+   },
+   "type": "setting",
+   "explanation": "세계관 규칙 RULE_017(코브의 팽이는 꿈속에서 쓰러지지 않는다)과 EVENT_020의 현실 확인(팽이가 쓰러짐) 사이에서 신규 사건이 맞지 않는다. 신규 사건은 '깨어난' 코브의 팽이가 한참 돌고도 쓰러지지 않는다고 쓰여, 깨어난 상태의 현실 확인 결과가 꿈의 징후와 같다. 다만 결론은 코브의 불확신으로 남겨져 있어 확신도는 중간이다.\n근거: RULE_017: 토템(팽이)은 꿈속에서 쓰러지지 않는다 / EVENT_020: 도쿄 아파트에서 팽이가 쓰러지는 것을 확인한다(현실 확인) / EVENT_092: 깨어난 코브가 식탁 위 팽이를 돌려 보는데 한참을 돌고도 쓰러지지 않는다",
+   "confidence": 0.9
+  },
+  {
+   "span": {
+    "start": 1923,
+    "end": 2004,
+    "quote": "여권을 내민 코브에게 심사관이 수배 기록을 확인하고 경관을 부르며, 코브는 사이토에게서 아무 연락도 없었다는 말을 들으며 수갑을 찬 채 연행된다."
+   },
+   "conflict_ref": {
+    "chapter_no": 3,
+    "quote": "LA 착륙 20분 전 코브가 깨어나고, 사이토는 기내 전화로 번호를 누른다."
+   },
+   "type": "event",
+   "explanation": "신규 사건에서 코브는 '사이토에게서 아무 연락도 없었다'는 말을 듣고 체포된다. 그러나 EVENT_083에서 LA 착륙 20분 전 코브가 깨어나자 사이토가 약속대로 기내 전화로 번호를 눌렀고, 그 결과가 '코브의 입국 문제 해결'로 기록되어 있다. 사이토가 전화를 걸었다는 선행 사건과 '아무 연락도 없었다'는 신규 사건의 진술이 직접 충돌한다.\n근거: EVENT_083 title: 코브가 747 기내에서 깨어나고 사이토가 약속대로 전화를 건다 / EVENT_083 source_text: 사이토가 기내 전화를 들어 번호를 누른다. / EVENT_083 result: 코브의 입국 문제 해결 / EVENT_093 summary: 코브는 사이토에게서 아무 연락도 없었다는 말을 들으며 수갑을 찬 채 연행된다",
+   "confidence": 0.9
+  },
+  {
+   "span": {
+    "start": 1923,
+    "end": 2004,
+    "quote": "여권을 내민 코브에게 심사관이 수배 기록을 확인하고 경관을 부르며, 코브는 사이토에게서 아무 연락도 없었다는 말을 들으며 수갑을 찬 채 연행된다."
+   },
+   "conflict_ref": {
+    "chapter_no": 3,
+    "quote": "입국 도장을 받은 코브가 팀원들과 눈인사를 나누고, 피셔는 그를 알아볼 듯 지나친다. 마일즈가 마중 나와 있다."
+   },
+   "type": "event",
+   "explanation": "EVENT_084에서 코브는 같은 LAX 입국장(LOCATION_084, TIME_084)에서 이미 여권에 입국 도장을 받고 심사를 통과해 팀원들과 눈인사를 나눴으며 마일즈가 마중 나와 있다(result: 코브 귀국). 신규 사건은 같은 시간·장소에서 심사관이 수배 기록을 확인하고 코브를 체포해 '귀국 실패'로 끝나므로, 직전 사건의 결과와 양립할 수 없다. 사이토의 전화 한 통이 EVENT_084의 원인(cause)으로 명시되어 있는데, 신규 사건은 그 연락 자체를 부정한다.\n근거: EVENT_084 source_text: 쾅! 여권에 입국 도장을 찍는다. / EVENT_084 cause: 사이토의 전화 한 통 / result: 코브 귀국 / EVENT_084 summary: 입국 도장을 받은 코브가 팀원들과 눈인사를 나누고 ... 마일즈가 마중 나와 있다 / EVENT_093: time_id TIME_084, location_id LOCATION_084, order 84.5, result '코브 체포, 귀국 실패'",
+   "confidence": 0.9
+  },
+  {
+   "span": {
+    "start": 1923,
+    "end": 2004,
+    "quote": "여권을 내민 코브에게 심사관이 수배 기록을 확인하고 경관을 부르며, 코브는 사이토에게서 아무 연락도 없었다는 말을 들으며 수갑을 찬 채 연행된다."
+   },
+   "conflict_ref": {
+    "chapter_no": 1,
+    "quote": "사이토는 경쟁사 후계자가 아버지의 제국을 해체하게 만들어 달라며, 성공 시 코브를 미국 아이들 곁으로 돌려보내겠다고 약속한다."
+   },
+   "type": "character",
+   "explanation": "EVENT_023에서 사이토는 작전 성공 시 코브를 미국의 아이들 곁으로 돌려보내겠다고 약속했고, EVENT_082에서 코브는 림보까지 가서 사이토를 구해 함께 귀환했다. 사이토가 약속을 지키지 않거나 연락이 닿지 않은 것으로 그려지려면 그 이유(약속 파기, 림보 후유증 등)가 서술되어야 하는데 신규 사건에는 근거가 없다. 또한 사이토(CHAR_002)가 참가자로 기록되어 있으나 요약상 사이토는 입국장에 등장하지 않고 '연락이 없었다'는 말로만 언급되어 참가자 표기의 정확성도 확인이 필요하다.\n근거: EVENT_023 summary: 성공 시 코브를 미국 아이들 곁으로 돌려보내겠다고 약속한다 / EVENT_082 result: 두 사람이 림보 탈출을 결심 / source_text: 돌아가서 다시 함께 젊은이가 됩시다. / EVENT_093 participant_character_ids에 CHAR_002 포함, 그러나 summary에서 사이토는 직접 등장하지 않음",
+   "confidence": 0.6
+  }
+ ]
+}

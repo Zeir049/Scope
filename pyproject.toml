@@ -1,0 +1,41 @@
+[project]
+name = "glitch-backend"
+version = "0.1.0"
+description = "Glitch 백엔드 몸통 — 인증/프로젝트·회차/원문/파이프라인 중개/캐논 병합"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.111",
+    "uvicorn[standard]>=0.30",
+    "sqlalchemy[asyncio]>=2.0.30",
+    "asyncpg>=0.29",            # 앱 런타임용 async 드라이버
+    "psycopg2-binary>=2.9",     # alembic 마이그레이션용 sync 드라이버
+    "alembic>=1.13",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "pyjwt>=2.8",
+    "cryptography>=42.0",       # Firebase ID 토큰(RS256) 서명 검증
+    "bcrypt>=4.1",
+    "python-multipart>=0.0.9",  # 파일 업로드(multipart)
+    "python-docx>=1.1",         # .docx 원문 파싱
+    "pypdf>=4.0",               # .pdf 원문 파싱
+    "arq>=0.26",                # 작업 큐(Redis) — 분석 작업을 워커 프로세스로 분리
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2",
+    "pytest-asyncio>=0.23",
+    "httpx>=0.27",              # 테스트 클라이언트
+    "aiosqlite>=0.20",          # 테스트용 인메모리 DB(선택)
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.setuptools.package-data]
+# .py 외 리소스도 패키지에 포함 (fake_visual.json 등 — 없으면 Docker 이미지에서 누락)
+app = ["**/*.json", "pipeline/replay_data/*.txt"]

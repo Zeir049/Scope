@@ -1,0 +1,54 @@
+# ⚠️ 컨테이너 배포용. api 포트 8000을 모든 인터페이스에 연다 — 공인 IP 직결 개발 PC에서는
+#    띄우지 말 것(리버스 프록시 뒤 전용).
+#
+# 배포용 오버레이 — 기본 compose(db/redis, adminer 는 tools 프로필) 위에 api·worker 컨테이너를 얹는다.
+#
+#   기동:  docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build api worker
+#   중지:  docker compose -f docker-compose.yml -f docker-compose.prod.yml stop api worker
+#
+# api는 시작 시 alembic 마이그레이션을 적용한 뒤 서버를 띄운다.
+# DATABASE/REDIS 주소는 컨테이너 네트워크 기준(db/redis 서비스명)으로 여기서
+# 강제하고, 나머지 설정(JWT, 파이프라인, 기능 플래그…)은 .env 를 그대로 쓴다.
+services:
+  api:
+    build: .
+    container_name: glitch-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file: [.env]
+    environment:
+      DATABASE_URL: postgresql+asyncpg://glitch:glitch@db:5432/glitch_integrated
+      DATABASE_URL_SYNC: postgresql+psycopg2://glitch:glitch@db:5432/glitch_integrated
+      REDIS_URL: redis://:${REDIS_PASSWORD}@redis:6379/0
+      QUEUE_MODE: arq
+    command: sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+    volumes:
+      - glitch_uploads:/srv/glitch/uploads
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  worker:
+    build: .
+    container_name: glitch-worker
+    restart: unless-stopped
+    env_file: [.env]
+    environment:
+      DATABASE_URL: postgresql+asyncpg://glitch:glitch@db:5432/glitch_integrated
+      DATABASE_URL_SYNC: postgresql+psycopg2://glitch:glitch@db:5432/glitch_integrated
+      REDIS_URL: redis://:${REDIS_PASSWORD}@redis:6379/0
+      QUEUE_MODE: arq
+    command: arq app.workers.worker.WorkerSettings
+    volumes:
+      - glitch_uploads:/srv/glitch/uploads
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+volumes:
+  glitch_uploads:
